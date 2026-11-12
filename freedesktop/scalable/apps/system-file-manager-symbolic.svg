@@ -1,9 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-  <!-- Aba traseira com cantos arredondados -->
+  <!-- Aba traseira modular com cantos arredondados -->
   <path d="M 2.5 1.5 C 1.67 1.5 1 2.17 1 3 L 1 3.5 L 15 3.5 L 15 3 C 15 2.17 14.33 1.5 13.5 1.5 L 8.5 1.5 L 7.3 2.1 C 7.1 2.2 6.8 2.3 6.5 2.3 L 2.5 2.3 Z"
         fill="currentColor" opacity="0.65"/>
   <!-- Corpo frontal com cantos bem arredondados -->
   <rect x="1" y="4.5" width="14" height="10" rx="2.5" ry="2.5" fill="currentColor"/>
-  <!-- Detalhe sutil de aba interna -->
-  <rect x="6" y="6" width="4" height="1" rx="0.5" ry="0.5" fill="#ffffff" opacity="0.35"/>
+  <!-- Ponto ótico / LED modular superior -->
+  <circle cx="12.5" cy="7" r="1" fill="#ffffff" opacity="0.8"/>
+  <!-- Linhas de decalque de missão espacial (inferior esquerda) -->
+  <rect x="3" y="11" width="4" height="1" rx="0.5" fill="#ffffff" opacity="0.75"/>
+  <rect x="3" y="12.5" width="2.5" height="1" rx="0.5" fill="#ffffff" opacity="0.5"/>
 </svg>
