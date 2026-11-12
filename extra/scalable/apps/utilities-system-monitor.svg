@@ -1,1 +1,96 @@
-<svg version="1.0" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-464 -28)"><rect x="480" y="84" width="224" height="176" ry="16" fill="#666"/><rect x="481" y="85" width="222" height="170" ry="15.5" fill="#cdcdcd"/><rect x="496" y="101" width="192" height="138" ry="2" fill="#424242"/><path d="M498 186h52l20-60 20 80 16-44 8 24h72" fill="none" stroke="#ffce51" stroke-linecap="square" stroke-width="4"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <!-- Chassi em titânio escuro espacial (irmão do Terminal e Definições) -->
+    <linearGradient id="chassis-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Visor escuro de telemetria -->
+    <linearGradient id="screen-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#091526"/>
+      <stop offset="100%" stop-color="#050b14"/>
+    </linearGradient>
+
+    <!-- Gradiente da onda de pulso (Ciano elétrico com pico energético em âmbar solar) -->
+    <linearGradient id="pulse-grad" x1="50" y1="128" x2="206" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="28%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#fbbf24"/>
+      <stop offset="72%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+
+    <!-- Preenchimento translúcido sob a curva de telemetria -->
+    <linearGradient id="pulse-fill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.0"/>
+    </linearGradient>
+
+    <!-- Recorte da tela interna -->
+    <clipPath id="screen-clip">
+      <rect x="50" y="52" width="156" height="152" rx="18" ry="18"/>
+    </clipPath>
+
+    <!-- Sombra principal do chassi -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="7" stdDeviation="8" flood-opacity="0.3"/>
+    </filter>
+
+    <!-- Brilho sutil da linha de telemetria -->
+    <filter id="pulse-glow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3.5" flood-color="#38bdf8" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Chassi Base Squircle (rx 28) -->
+  <rect x="36" y="36" width="184" height="184" rx="28" ry="28"
+        fill="url(#chassis-grad)"
+        stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.3"
+        filter="url(#shadow)"/>
+
+  <!-- Friso de luz especular contínuo na curvatura superior -->
+  <path d="M 64 42 L 192 42"
+        stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.35"/>
+
+  <!-- Visor Interno de Monitoramento -->
+  <rect x="50" y="52" width="156" height="152" rx="18" ry="18"
+        fill="url(#screen-grad)"/>
+
+  <!-- Grade Técnica e Pulso Recortados no Visor -->
+  <g clip-path="url(#screen-clip)">
+    <!-- Linhas verticais da grade técnica -->
+    <g stroke="#38bdf8" stroke-width="1" opacity="0.14">
+      <line x1="81" y1="52" x2="81" y2="204"/>
+      <line x1="112" y1="52" x2="112" y2="204"/>
+      <line x1="144" y1="52" x2="144" y2="204"/>
+      <line x1="175" y1="52" x2="175" y2="204"/>
+    </g>
+
+    <!-- Linhas horizontais da grade técnica -->
+    <g stroke="#38bdf8" stroke-width="1" opacity="0.14">
+      <line x1="50" y1="82" x2="206" y2="82"/>
+      <line x1="50" y1="113" x2="206" y2="113"/>
+      <line x1="50" y1="143" x2="206" y2="143"/>
+      <line x1="50" y1="174" x2="206" y2="174"/>
+    </g>
+
+    <!-- Sombra luminosa de área sob o gráfico -->
+    <path d="M 50 136 H 76 L 86 112 L 98 164 L 114 78 L 126 142 L 138 122 H 154 L 164 100 L 176 152 L 186 136 H 206 V 204 H 50 Z"
+          fill="url(#pulse-fill)"/>
+
+    <!-- Linha de Pulso / Telemetria do Sistema -->
+    <path d="M 50 136 H 76 L 86 112 L 98 164 L 114 78 L 126 142 L 138 122 H 154 L 164 100 L 176 152 L 186 136 H 206"
+          fill="none"
+          stroke="url(#pulse-grad)"
+          stroke-width="4.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          filter="url(#pulse-glow)"/>
+  </g>
+
+  <!-- Moldura interna ciano translúcida sobre o visor -->
+  <rect x="50" y="52" width="156" height="152" rx="18" ry="18"
+        fill="none"
+        stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.32"/>
+</svg>
