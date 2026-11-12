@@ -1,1 +1,37 @@
-<svg version="1.0" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-464 -28)"><path d="M487 52c-4.432 0-8 3.568-8 8v192c0 4.432 3.568 8 8 8h208c4.432 0 8-3.568 8-8V84c0-4.432-3.568-8-8-8h-92l-24-24z" fill="#48b9c7"/><rect x="478" y="83" width="228" height="181" ry="8" fill="#565656"/><rect x="481" y="83" width="222" height="39" ry="7.25" fill="#051719" fill-opacity=".314"/><rect x="479" y="84" width="226" height="175" ry="7.5" fill="#acacac"/><g transform="translate(305 -126)"><rect x="246" y="242" width="82" height="23" ry="1.5" fill="#676767" fill-opacity=".502"/><rect x="247" y="243" width="80" height="16" ry="1" fill="#fafafa"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="back-folder" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <linearGradient id="front-folder" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="sheet" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Pasta: aba traseira com cantos bem arredondados -->
+  <path d="M 36 64 C 36 48 48 36 64 36 L 100 36 C 112 36 122 46 128 56 L 134 66 C 140 76 148 82 160 82 L 192 82 C 208 82 220 94 220 110 L 220 194 C 220 210 208 222 192 222 L 64 222 C 48 222 36 210 36 194 Z"
+        fill="url(#back-folder)"/>
+
+  <!-- Documento / Folha interna com cantos arredondados -->
+  <rect x="60" y="60" width="136" height="88" rx="14" ry="14" fill="url(#sheet)"/>
+  <rect x="80" y="74" width="46" height="6" rx="3" fill="#cbd5e1"/>
+  <rect x="80" y="86" width="76" height="6" rx="3" fill="#e2e8f0"/>
+
+  <!-- Aba frontal com cantos bem arredondados (rx 28) -->
+  <rect x="36" y="96" width="184" height="126" rx="28" ry="28"
+        fill="url(#front-folder)"
+        filter="url(#shadow)"/>
+
+  <!-- Brilho sutil superior nos cantos arredondados -->
+  <path d="M 64 102 L 192 102"
+        stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.35"/>
+</svg>
