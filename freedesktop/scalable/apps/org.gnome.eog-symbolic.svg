@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <!-- Moldura squircle do Visualizador com planeta e montanhas em recorte -->
+  <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M 4 2 C 2.9 2 2 2.9 2 4 V 12 C 2 13.1 2.9 14 4 14 H 12 C 13.1 14 14 13.1 14 12 V 4 C 14 2.9 13.1 2 12 2 H 4 Z M 6 4.5 C 5.2 4.5 4.5 5.2 4.5 6 C 4.5 6.8 5.2 7.5 6 7.5 C 6.8 7.5 7.5 6.8 7.5 6 C 7.5 5.2 6.8 4.5 6 4.5 Z M 10.3 8.2 C 10.1 8 9.8 8 9.6 8.2 L 7.6 10.5 L 6.3 9.3 C 6.1 9.1 5.8 9.1 5.6 9.3 L 3.4 11.6 C 3.2 11.8 3.3 12.2 3.7 12.2 H 12.3 C 12.7 12.2 12.8 11.8 12.6 11.5 L 10.3 8.2 Z"
+        fill="currentColor"/>
+</svg>

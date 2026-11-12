@@ -2,7 +2,7 @@
 Name=COSMIC Brian Theme
 Comment=Brian's Redesign of System76's COSMIC Icon Theme for Linux
 Example=folder
-Inherits=Cosmic,hicolor
+Inherits=Cosmic,Pop,Papirus,Adwaita,hicolor
 
 # KDE Specific Stuff
 DisplayDepth=32
