@@ -46,6 +46,9 @@ A identidade do tema une a **clareza semântica dos objetos clássicos** (a past
 - 💻 **Terminal (`COSMIC Term`)**: Janela flutuante moderna com cantos arredondados, chassi em titânio escuro, barra de janela integrada e prompt cósmico `❯ _` em ciano neon.
 - 🛍️ **Loja de Aplicativos (`COSMIC Store`)**: Caixa/embalagem de software com cantos arredondados (`rx="28"`), múltiplos cartões de aplicativos (teal, púrpura cósmico e âmbar solar) emergindo no topo e seta central de instalação com berço luminoso.
 - ⚙️ **Configurações / Definições (`COSMIC Settings`)**: Chassi frontal squircle (`rx="28"`) em titânio espacial com friso superior de luz, cavidade usinada e engrenagem de precisão mecânica com o toggle switch de sintonia do COSMIC no núcleo.
+- 🎬 **Reprodutor de Mídia (`COSMIC Media Player`)**: Chassi squircle (`rx="28"`) em azul cósmico profundo, visor interno em azul-noite espacial, disco central ciano elétrico com triângulo de *Play* opticamente centralizado e barra de progresso inferior (*scrubber*) com indicador luminoso.
+- 📈 **Monitor do Sistema (`COSMIC System Monitor`)**: Chassi squircle (`rx="28"`) em titânio escuro espacial, visor interno com grade técnica em ciano translúcido e pulso de telemetria em gradiente ciano elétrico (`#38bdf8`) com pico central energético em âmbar solar (`#fbbf24`).
+- 🖼️ **Visualizador de Imagens (`COSMIC Viewer`)**: Moldura squircle (`rx="28"`) em ciano vibrante e azul cósmico, abrigando a paisagem cósmica com céu profundo estrelado, planeta anelado em perspectiva e cordilheiras sobrepostas em camadas.
 
 ---
 
@@ -68,6 +71,6 @@ just install-user
 # 2. Atualizar o cache de ícones do usuário
 gtk-update-icon-cache -f -t ~/.local/share/icons/Cosmic-Custom/
 
-# 3. Recarregar painel, dock, biblioteca de apps e launcher
-killall cosmic-panel cosmic-app-library cosmic-launcher
+# 3. Recarregar dock (app-list), biblioteca de apps e launcher sem derrubar o painel superior
+killall cosmic-app-list cosmic-app-library cosmic-launcher
 ```
