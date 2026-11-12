@@ -1,8 +1,8 @@
 [Icon Theme]
-Name=COSMIC Custom
-Comment=COSMIC Custom Icons
+Name=COSMIC Brian Theme
+Comment=Brian's Redesign of System76's COSMIC Icon Theme for Linux
 Example=folder
-Inherits=Cosmic,Pop,hicolor
+Inherits=Cosmic,hicolor
 
 # KDE Specific Stuff
 DisplayDepth=32

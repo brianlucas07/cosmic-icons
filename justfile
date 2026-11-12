@@ -1,10 +1,10 @@
 set export
 rootdir := ''
 prefix := '/usr'
-theme-name := 'Cosmic-Custom'
+theme-name := 'COSMIC-Brian-Theme'
 base-dir := absolute_path(clean(rootdir / prefix))
 install-dir := base-dir / 'share'
-icons := install-dir / 'icons' / theme-name
+icons := install-dir / 'icons' / 'COSMIC-Brian-Theme'
 export ICONS := icons
 
 default:

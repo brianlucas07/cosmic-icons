@@ -1,76 +1,73 @@
-# Diretrizes de Design & Filosofia Visual (COSMIC Custom)
+# Design Guidelines & Visual Philosophy (COSMIC Brian Theme)
 
-Este documento estabelece os princípios visuais, estruturais e técnicos do tema **COSMIC Custom**.
-
----
-
-## 1. Visão Geral: Formas Icônicas Modernas com Alma Cósmica
-
-A identidade do tema une a **clareza semântica dos objetos clássicos** (a pasta, o documento com lápis, a janela de terminal, a sacola de aplicativos) ao acabamento moderno, polido e refinado do **COSMIC Desktop**.
-
-- **Objetos Reais e Reconhecíveis**: Cada ícone é a representação direta e orgânica do que o aplicativo faz. Sem "caixas com telinhas" genéricas ou adereços artificiais.
-- **A Alma Retro-Futurista**: Reside sutilmente na **paleta cósmica** (azul espacial profundo, ciano elétrico vibrante, toques em âmbar solar), nas sombras suaves de profundidade e nos **cantos generosamente arredondados** (*squircles*).
-- **Sobriedade e Função**: Eliminação de ruídos visuais e enfeites excessivos em favor de formas puras, elegantes e legíveis tanto na dock quanto no launcher.
+This document establishes the visual, structural, and technical principles of the **COSMIC Brian Theme**.
 
 ---
 
-## 2. Princípios de Geometria & Proporção
+## 1. Overview: Modern Iconic Forms with a Cosmic Soul
 
-1. **Cantos Bem Arredondados (*Gentle Squircles*)**:
-   - Elementos principais adotam curvas suaves e contínuas (`rx="28"` na escala `256x256`).
-   - Elementos internos (folhas, janelas, painéis) utilizam raios harmônicos entre `rx="14"` e `rx="20"`.
-   - O arredondamento dialoga perfeitamente com as janelas, applets e a dock flutuante do COSMIC.
-2. **Profundidade em Camadas (*Layered Depth*)**:
-   - Luz natural com degradês direcionais suaves.
-   - Sombras difusas e discretas (`feDropShadow dx="0" dy="6" stdDeviation="7" flood-opacity="0.24"`), criando volume ótico sem peso skeuomórfico.
-   - Friso de luz contínuo (`stroke-width="2.5"`, opacidade moderada) na curvatura superior para destaque tátil.
+The theme's visual identity unites the **semantic clarity of classic objects** (the folder, the notepad with a pencil, the terminal window, the software package box) with the modern, polished finish of **COSMIC Desktop**.
+
+- **Real, Recognizable Objects**: Every icon is a direct, organic representation of what the application or section does—without generic "boxes with screens" or artificial clutter.
+- **Retro-Futuristic Soul**: Expressed through the **cosmic palette** (deep space blue, vibrant electric cyan, dark titanium, and solar amber accents), soft layered depth shadows, and **generously rounded corners** (*squircles*).
+- **Clarity & Function**: Visual noise is eliminated in favor of clean, legible silhouettes across the dock, top panel, app launcher, and system settings.
 
 ---
 
-## 3. Paleta de Cores e Iluminação
+## 2. Geometry & Proportion Principles
 
-| Tom | Hexadecimal | Uso no Tema |
+1. **Gentle Squircles**:
+   - Primary containers adopt smooth, continuous curves (`rx="28"` on the `256x256` canvas).
+   - Inner elements (document sheets, windows, panels) use harmonic radii between `rx="14"` and `rx="20"`.
+   - The corner curvature aligns seamlessly with COSMIC windows, applets, and floating dock.
+2. **Layered Depth**:
+   - Natural directional gradients.
+   - Soft, diffused drop shadows (`feDropShadow dx="0" dy="6" stdDeviation="7" flood-opacity="0.24"`), creating optical volume without heavy skeuomorphism.
+   - Continuous top specular highlight (`stroke="#ffffff" stroke-width="2.5" opacity="0.45"`) along the top edge for tactile definition.
+
+---
+
+## 3. Color Palette & Lighting
+
+| Tone | Hex | Usage |
 | :--- | :--- | :--- |
-| **Azul Espacial Profundo** | `#075985` → `#0284c7` | Placas base, molduras de janelas e pranchetas |
-| **Ciano Cósmico Vibrante** | `#0284c7` → `#38bdf8` | Abas frontais, corpos de sacolas, lápis e realces |
-| **Branco Lunar / Papel** | `#ffffff` → `#f8fafc` | Folhas de notas e documentos internos |
-| **Preto Espacial Profundo** | `#060e1c` → `#0b172a` | Interior de telas de terminal |
-| **Âmbar Solar** | `#f59e0b` | Borrachas de lápis e detalhes pontuais de foco |
+| **Deep Space Blue** | `#075985` → `#0284c7` | Base plates, window frames, and backplates |
+| **Vibrant Cosmic Cyan** | `#0284c7` → `#38bdf8` | Front folder flaps, highlights, active controls |
+| **Lunar White / Paper** | `#ffffff` → `#f8fafc` | Inner document sheets and high-contrast glyphs |
+| **Dark Space Titanium** | `#1e293b` → `#0f172a` | Terminal/system chassis and dark recesses |
+| **Solar Amber** | `#fbbf24` / `#f59e0b` | Pencil erasers, telemetry peaks, and focal accents |
 
 ---
 
-## 4. Família Fundamental de Aplicativos
+## 4. Core Application Family
 
-- 📂 **Gerenciador de Arquivos (`COSMIC Files`)**: Pasta clássica com aba traseira curva, corpo frontal arredondado (`rx="28"`), folha de documento interna e friso de luz superior.
-- 📝 **Editor de Texto (`COSMIC Edit`)**: Bloco de notas com cantos arredondados, linhas suaves de texto e um lápis moderno estilizado cruzando na frente com sombra projetada.
-- 💻 **Terminal (`COSMIC Term`)**: Janela flutuante moderna com cantos arredondados, chassi em titânio escuro, barra de janela integrada e prompt cósmico `❯ _` em ciano neon.
-- 🛍️ **Loja de Aplicativos (`COSMIC Store`)**: Caixa/embalagem de software com cantos arredondados (`rx="28"`), múltiplos cartões de aplicativos (teal, púrpura cósmico e âmbar solar) emergindo no topo e seta central de instalação com berço luminoso.
-- ⚙️ **Configurações / Definições (`COSMIC Settings`)**: Chassi frontal squircle (`rx="28"`) em titânio espacial com friso superior de luz, cavidade usinada e engrenagem de precisão mecânica com o toggle switch de sintonia do COSMIC no núcleo.
-- 🎬 **Reprodutor de Mídia (`COSMIC Media Player`)**: Chassi squircle (`rx="28"`) em azul cósmico profundo, visor interno em azul-noite espacial, disco central ciano elétrico com triângulo de *Play* opticamente centralizado e barra de progresso inferior (*scrubber*) com indicador luminoso.
-- 📈 **Monitor do Sistema (`COSMIC System Monitor`)**: Chassi squircle (`rx="28"`) em titânio escuro espacial, visor interno com grade técnica em ciano translúcido e pulso de telemetria em gradiente ciano elétrico (`#38bdf8`) com pico central energético em âmbar solar (`#fbbf24`).
-- 🖼️ **Visualizador de Imagens (`COSMIC Viewer`)**: Moldura squircle (`rx="28"`) em ciano vibrante e azul cósmico, abrigando a paisagem cósmica com céu profundo estrelado, planeta anelado em perspectiva e cordilheiras sobrepostas em camadas.
-
----
-
-## 5. Diretrizes para Ícones Simbólicos (`16x16`)
-
-1. **Pixel-Perfect & Limpo**:
-   - Desenhados na grade de `16x16` (`viewBox="0 0 16 16"`).
-   - Silhuetas nítidas e desobstruídas que espelham diretamente o objeto colorido.
-2. **Integração Dinâmica de Cores**:
-   - Uso de `fill="currentColor"` para reagir dinamicamente ao tema escuro/claro e à cor de destaque (*accent color*) do COSMIC.
+- 📂 **File Manager (`COSMIC Files`)**: Classic folder with curved back tab, squircle front body (`rx="28"`), inner document sheet, and top specular highlight.
+- 📝 **Text Editor (`COSMIC Edit`)**: Rounded notepad with soft text lines and a stylized angled pencil casting a soft shadow.
+- 💻 **Terminal (`COSMIC Term`)**: Floating squircle window with dark titanium chassis, integrated header bar, and neon cyan `❯ _` prompt.
+- 🛍️ **App Store (`COSMIC Store`)**: Rounded software package box (`rx="28"`), colorful app cards (teal, cosmic purple, solar amber) emerging from the top, and central installation arrow.
+- ⚙️ **Settings (`COSMIC Settings`)**: Space-titanium squircle chassis (`rx="28"`) with top specular rim, machined recess, precision mechanical gear, and COSMIC toggle switch at the core.
+- 🎬 **Media Player (`COSMIC Media Player`)**: Deep cosmic blue squircle chassis (`rx="28"`), midnight-blue inner display, electric cyan central play disc, and bottom progress scrubber.
+- 📈 **System Monitor (`COSMIC System Monitor`)**: Dark titanium squircle chassis (`rx="28"`), translucent cyan technical grid, and electric cyan telemetry wave (`#38bdf8`) with a solar amber peak (`#fbbf24`).
+- 🖼️ **Image Viewer (`COSMIC Viewer`)**: Vibrant cyan and cosmic blue squircle frame (`rx="28"`) housing a starry deep-space sky, ringed planet, and layered mountain ridges.
 
 ---
 
-## 6. Fluxo de Instalação e Teste Local
+## 5. Symbolic Icons (`16x16 -symbolic.svg`)
+
+1. **Pixel-Perfect & Crisp**:
+   - Designed on a `16x16` grid (`viewBox="0 0 16 16"`).
+   - Pure filled vector paths (`fill="#232323"`) with rounded caps and squircle corners (`rx="2.4"` to `3.2`) for full compatibility with `libcosmic` dynamic recoloring in Dark and Light modes.
+2. **Semantic Hierarchy**:
+   - Primary strokes and silhouettes at full opacity (`1.0`), with secondary layers or inactive states at `0.3`–`0.55` opacity.
+
+---
+
+## 6. Local Installation & Testing Workflow
 
 ```bash
-# 1. Instalar os ícones atualizados na pasta local (~/.local/share/icons/Cosmic-Custom/)
-just install-user
+# 1. Install the theme into ~/.local/share/icons/COSMIC-Brian-Theme
+./install.sh
 
-# 2. Atualizar o cache de ícones do usuário
-gtk-update-icon-cache -f -t ~/.local/share/icons/Cosmic-Custom/
-
-# 3. Recarregar dock (app-list), biblioteca de apps e launcher sem derrubar o painel superior
+# 2. Reload COSMIC dock, app library, and launcher
 killall cosmic-app-list cosmic-app-library cosmic-launcher
 ```
