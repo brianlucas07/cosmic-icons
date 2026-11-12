@@ -16,20 +16,24 @@ Then run the following single command in your terminal:
 git clone https://github.com/brianlucas07/cosmic-icons.git /tmp/cosmic-brian-theme && cd /tmp/cosmic-brian-theme && ./install.sh && rm -rf /tmp/cosmic-brian-theme
 ```
 
+> **Note:** On **COSMIC Desktop**, `./install.sh` will automatically set `COSMIC-Brian-Theme` as your active icon theme and briefly restart `cosmic-panel` (top panel and dock), `cosmic-app-library`, `cosmic-launcher`, and `cosmic-files` so the in-memory SVG icon cache refreshes immediately without needing to log out.
+
 This command will:
 1. Clone the repository into a temporary directory (`/tmp/cosmic-brian-theme`);
 2. Build and install the icon theme cleanly into `~/.local/share/icons/COSMIC-Brian-Theme` (without requiring `sudo` or overwriting system icons);
 3. Update the icon cache (`gtk-update-icon-cache`);
-4. Remove the temporary build directory.
+4. Activate `COSMIC-Brian-Theme` in COSMIC and reload the panel, dock, and launcher caches;
+5. Remove the temporary build directory.
 
 ---
 
-## Activating the Theme
+## Switching Themes Manually
 
-- **COSMIC Desktop (GUI):** Open **Settings > Desktop > Appearance**, scroll down to the **Icon theme** section, and select **COSMIC Brian Theme**.
+- **COSMIC Desktop (GUI):** Open **Settings > Desktop > Appearance**, scroll down to the **Icon theme** section, and select **COSMIC Brian Theme**. *(If switching from another theme while the session is running, run `killall cosmic-panel cosmic-app-library cosmic-launcher` to refresh the in-memory icon cache immediately).*
 - **COSMIC Desktop (Terminal):**
   ```bash
   echo -n '"COSMIC-Brian-Theme"' > ~/.config/cosmic/com.system76.CosmicTk/v1/icon_theme
+  killall cosmic-panel cosmic-app-library cosmic-launcher
   ```
 - **GNOME / GTK:**
   ```bash
