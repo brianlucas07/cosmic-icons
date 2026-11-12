@@ -1,8 +1,8 @@
 [Icon Theme]
-Name=COSMIC
-Comment=COSMIC Icons
+Name=COSMIC Custom
+Comment=COSMIC Custom Icons
 Example=folder
-Inherits=Pop,hicolor
+Inherits=Cosmic,Pop,hicolor
 
 # KDE Specific Stuff
 DisplayDepth=32
