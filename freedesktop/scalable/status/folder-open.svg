@@ -1,1 +1,37 @@
-<svg version="1.0" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-1244 -28)"><path d="M1268 52c-4.432 0-8 3.568-8 8v196c0 4.432 3.568 8 8 8h208c4.432 0 8-3.568 8-8V84c0-4.432-3.568-8-8-8h-92l-24-24z" fill="#1c8d9b"/><rect x="1260" y="146" width="224" height="74" ry="7.25" fill="#051719" fill-opacity=".314"/><rect x="1260" y="148" width="224" height="112" ry="8" fill="#48b9c7"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="back-folder" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#68707d"/>
+      <stop offset="100%" stop-color="#4b525d"/>
+    </linearGradient>
+    <linearGradient id="front-folder" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9ca4b2"/>
+      <stop offset="100%" stop-color="#7d8594"/>
+    </linearGradient>
+    <linearGradient id="doc-sheet" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-opacity="0.24"/>
+    </filter>
+  </defs>
+
+  <!-- Placa traseira da pasta -->
+  <path d="M 36 64 C 36 48 48 36 64 36 L 100 36 C 112 36 122 46 128 56 L 134 66 C 140 76 148 82 160 82 L 192 82 C 208 82 220 94 220 110 L 220 194 C 220 210 208 222 192 222 L 64 222 C 48 222 36 210 36 194 Z"
+        fill="url(#back-folder)"/>
+
+  <!-- Documento interno mais visível (estado aberto / drag-accept) -->
+  <rect x="56" y="54" width="144" height="96" rx="14" ry="14" fill="url(#doc-sheet)"/>
+  <rect x="76" y="70" width="52" height="6" rx="3" fill="#cbd5e1"/>
+  <rect x="76" y="84" width="84" height="6" rx="3" fill="#e2e8f0"/>
+
+  <!-- Aba frontal ligeiramente rebaixada indicando abertura (rx 28) -->
+  <rect x="32" y="108" width="192" height="114" rx="28" ry="28"
+        fill="url(#front-folder)"
+        filter="url(#shadow)"/>
+
+  <!-- Friso de luz superior -->
+  <path d="M 60 114 L 196 114"
+        stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/>
+</svg>
