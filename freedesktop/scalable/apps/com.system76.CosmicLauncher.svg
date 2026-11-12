@@ -1,0 +1,52 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ln_chassis" x1="128" y1="20" x2="128" y2="236" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="ln_tile_cyan" x1="44" y1="44" x2="116" y2="116" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="ln_tile_purple" x1="140" y1="44" x2="212" y2="116" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#7e22ce"/>
+    </linearGradient>
+    <linearGradient id="ln_tile_blue" x1="44" y1="140" x2="116" y2="212" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <linearGradient id="ln_lens" x1="92" y1="92" x2="172" y2="172" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="55%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="ln_handle" x1="168" y1="168" x2="216" y2="216" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <filter id="ln_drop" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#020617" flood-opacity="0.45"/>
+    </filter>
+    <filter id="ln_lens_drop" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#020617" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+  <!-- Squircle Chassis -->
+  <rect x="20" y="20" width="216" height="216" rx="28" fill="url(#ln_chassis)" filter="url(#ln_drop)"/>
+  <path d="M 48 21.5 H 208" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/>
+  <!-- Background App Squircles -->
+  <rect x="44" y="44" width="72" height="72" rx="18" fill="url(#ln_tile_cyan)"/>
+  <path d="M 60 45.5 H 100" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.45"/>
+  <rect x="140" y="44" width="72" height="72" rx="18" fill="url(#ln_tile_purple)"/>
+  <path d="M 156 45.5 H 196" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.45"/>
+  <rect x="44" y="140" width="72" height="72" rx="18" fill="url(#ln_tile_blue)"/>
+  <path d="M 60 141.5 H 100" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.45"/>
+  <!-- Cosmic Search Magnifier Overlay -->
+  <g filter="url(#ln_lens_drop)">
+    <path d="M 164 164 L 206 206" stroke="url(#ln_handle)" stroke-width="22" stroke-linecap="round"/>
+    <circle cx="132" cy="132" r="50" fill="#f8fafc"/>
+    <circle cx="132" cy="132" r="40" fill="url(#ln_lens)"/>
+    <path d="M 108 114 A 28 28 0 0 1 146 106" stroke="#ffffff" stroke-width="5" stroke-linecap="round" opacity="0.65"/>
+  </g>
+</svg>

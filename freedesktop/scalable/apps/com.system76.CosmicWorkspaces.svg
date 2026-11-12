@@ -1,0 +1,61 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ws_chassis" x1="128" y1="28" x2="128" y2="228" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#075985"/>
+    </linearGradient>
+    <linearGradient id="ws_screen" x1="128" y1="42" x2="128" y2="214" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="ws_win1" x1="48" y1="58" x2="144" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e0f2fe"/>
+    </linearGradient>
+    <linearGradient id="ws_win2" x1="156" y1="62" x2="208" y2="124" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="ws_win3" x1="76" y1="138" x2="188" y2="196" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <filter id="ws_drop" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#020617" flood-opacity="0.45"/>
+    </filter>
+    <filter id="ws_card_drop" x="-12%" y="-12%" width="124%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#020617" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <!-- Outer Squircle Chassis -->
+  <rect x="16" y="28" width="224" height="200" rx="28" fill="url(#ws_chassis)" filter="url(#ws_drop)"/>
+  <path d="M 44 29.5 H 212" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/>
+  <!-- Inner Dark Viewport -->
+  <rect x="30" y="42" width="196" height="172" rx="20" fill="url(#ws_screen)"/>
+  <!-- Primary Workspace Window (Top Left) -->
+  <g filter="url(#ws_card_drop)">
+    <rect x="44" y="56" width="98" height="68" rx="12" fill="url(#ws_win1)"/>
+    <circle cx="128" cy="68" r="3.5" fill="#0284c7"/>
+    <circle cx="117" cy="68" r="3.5" fill="#38bdf8"/>
+    <circle cx="106" cy="68" r="3.5" fill="#94a3b8"/>
+    <rect x="56" y="82" width="54" height="6" rx="3" fill="#cbd5e1"/>
+    <rect x="56" y="94" width="38" height="6" rx="3" fill="#e2e8f0"/>
+  </g>
+  <!-- Secondary Workspace Window (Top Right) -->
+  <g filter="url(#ws_card_drop)">
+    <rect x="154" y="62" width="58" height="58" rx="12" fill="url(#ws_win2)"/>
+    <circle cx="198" cy="74" r="3" fill="#e0f2fe"/>
+    <circle cx="188" cy="74" r="3" fill="#7dd3fc"/>
+  </g>
+  <!-- Active Workspace Window (Bottom Center) -->
+  <g filter="url(#ws_card_drop)">
+    <rect x="74" y="134" width="112" height="54" rx="12" fill="url(#ws_win3)"/>
+    <circle cx="172" cy="146" r="3.5" fill="#78350f" opacity="0.65"/>
+    <circle cx="161" cy="146" r="3.5" fill="#78350f" opacity="0.45"/>
+    <rect x="88" y="158" width="60" height="6" rx="3" fill="#fef3c7" opacity="0.85"/>
+  </g>
+  <!-- Bottom Workspace Switcher Indicator Pills -->
+  <rect x="96" y="198" width="28" height="6" rx="3" fill="#38bdf8"/>
+  <rect x="130" y="198" width="12" height="6" rx="3" fill="#64748b"/>
+  <rect x="148" y="198" width="12" height="6" rx="3" fill="#64748b"/>
+</svg>
