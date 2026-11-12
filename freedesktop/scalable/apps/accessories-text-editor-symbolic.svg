@@ -1,9 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-  <!-- Documento de texto com cantos arredondados -->
-  <rect x="1.5" y="1" width="13" height="14" rx="2.5" ry="2.5" fill="currentColor"/>
-  <!-- Linhas de texto diagramadas -->
-  <rect x="3.5" y="3.5" width="6" height="1.2" rx="0.6" fill="#ffffff"/>
-  <rect x="5" y="5.8" width="6.5" height="1.2" rx="0.6" fill="#ffffff" opacity="0.85"/>
-  <rect x="5" y="8.1" width="4.5" height="1.2" rx="0.6" fill="#ffffff" opacity="0.85"/>
-  <rect x="3.5" y="10.4" width="3.5" height="1.2" rx="0.6" fill="#ffffff" opacity="0.7"/>
+  <!-- Folha de documento com cantos arredondados -->
+  <rect x="2" y="1" width="10" height="13" rx="2" ry="2" fill="currentColor"/>
+  <!-- Linhas sutis de texto -->
+  <rect x="3.8" y="3.2" width="5" height="1" rx="0.5" fill="#ffffff"/>
+  <rect x="3.8" y="5.2" width="6" height="1" rx="0.5" fill="#ffffff" opacity="0.85"/>
+  <rect x="3.8" y="7.2" width="4.5" height="1" rx="0.5" fill="#ffffff" opacity="0.85"/>
+  <!-- Lápis moderno em destaque na diagonal -->
+  <path d="M 14.5 5 L 12.5 3 L 7.5 11 L 7 13.5 L 9.5 13 Z"
+        fill="#ffffff" stroke="currentColor" stroke-width="0.75" stroke-linejoin="round"/>
 </svg>
