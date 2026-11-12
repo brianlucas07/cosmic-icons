@@ -1,50 +1,95 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
   <defs>
-    <!-- Degradê da alça da sacola -->
-    <linearGradient id="bag-handle" x1="0%" y1="0%" x2="0%" y2="100%">
+    <!-- Degradê da placa traseira da caixa (Azul cósmico profundo) -->
+    <linearGradient id="back-crate" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#0284c7"/>
       <stop offset="100%" stop-color="#075985"/>
     </linearGradient>
 
-    <!-- Degradê do corpo da sacola (Ciano a azul cósmico) -->
-    <linearGradient id="bag-body" x1="0%" y1="0%" x2="0%" y2="100%">
+    <!-- Degradê da placa frontal (Ciano vibrante a azul cósmico) -->
+    <linearGradient id="front-crate" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#38bdf8"/>
       <stop offset="100%" stop-color="#0284c7"/>
     </linearGradient>
 
-    <!-- Sombra suave e difusa de profundidade -->
-    <filter id="shadow-bag" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-opacity="0.24"/>
+    <!-- Cartão Esquerdo (Teal / Ciano) -->
+    <linearGradient id="card-teal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#0891b2"/>
+    </linearGradient>
+
+    <!-- Cartão Central (Púrpura Cósmico) -->
+    <linearGradient id="card-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#7e22ce"/>
+    </linearGradient>
+
+    <!-- Cartão Direito (Âmbar Solar) -->
+    <linearGradient id="card-amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+
+    <!-- Sombras de profundidade e oclusão -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-opacity="0.25"/>
+    </filter>
+
+    <filter id="shadow-card" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.22"/>
+    </filter>
+
+    <filter id="shadow-arrow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#0369a1" flood-opacity="0.5"/>
     </filter>
   </defs>
 
-  <!-- Alça curva da sacola -->
-  <path d="M 96 74 V 46 C 96 32 110 22 128 22 C 146 22 160 32 160 46 V 74"
-        stroke="url(#bag-handle)" stroke-width="12" stroke-linecap="round" fill="none"/>
+  <!-- Placa traseira do pacote / caixa (Squircle rx 28) -->
+  <rect x="36" y="48" width="184" height="174" rx="28" ry="28" fill="url(#back-crate)"/>
 
-  <!-- Corpo da sacola de aplicativos com cantos bem arredondados (rx 28) -->
-  <rect x="38" y="66" width="180" height="158" rx="28" ry="28"
-        fill="url(#bag-body)"
-        filter="url(#shadow-bag)"/>
+  <!-- Cavidade interna escura de recepção dos aplicativos -->
+  <rect x="50" y="62" width="156" height="58" rx="14" fill="#082f49" opacity="0.4"/>
 
-  <!-- Rebites de fixação da alça -->
-  <circle cx="96" cy="78" r="5" fill="#075985"/>
-  <circle cx="96" cy="78" r="2.5" fill="#ffffff" opacity="0.6"/>
-  <circle cx="160" cy="78" r="5" fill="#075985"/>
-  <circle cx="160" cy="78" r="2.5" fill="#ffffff" opacity="0.6"/>
+  <!-- Cartão Esquerdo (Teal) com leve rotação natural -->
+  <g transform="rotate(-6, 75, 75)" filter="url(#shadow-card)">
+    <rect x="52" y="44" width="52" height="66" rx="13" fill="url(#card-teal)"/>
+    <rect x="62" y="56" width="22" height="4" rx="2" fill="#ffffff" opacity="0.85"/>
+    <rect x="62" y="64" width="32" height="4" rx="2" fill="#ffffff" opacity="0.6"/>
+  </g>
 
-  <!-- Painel central sutil com cantos suaves -->
-  <rect x="94" y="112" width="68" height="68" rx="18" ry="18"
-        fill="#0b172a" fill-opacity="0.25"/>
+  <!-- Cartão Direito (Âmbar Solar) com leve rotação natural -->
+  <g transform="rotate(6, 181, 75)" filter="url(#shadow-card)">
+    <rect x="152" y="44" width="52" height="66" rx="13" fill="url(#card-amber)"/>
+    <path d="M 180 54 L 174 62 L 179 62 L 176 70 L 183 61 L 178 61 Z"
+          fill="#ffffff" opacity="0.9"/>
+  </g>
 
-  <!-- Seta central de instalação/download em branco nítido -->
-  <path d="M 128 126 L 128 154"
-        stroke="#ffffff" stroke-width="5" stroke-linecap="round" fill="none"/>
-  <path d="M 116 144 L 128 156 L 140 144"
-        stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <rect x="115" y="164" width="26" height="4" rx="2" fill="#38bdf8"/>
+  <!-- Cartão Central (Púrpura Cósmico) destacado no topo -->
+  <g filter="url(#shadow-card)">
+    <rect x="100" y="32" width="56" height="74" rx="14" fill="url(#card-purple)"/>
+    <!-- Estrela cósmica central de 4 pontas -->
+    <path d="M 128 44 C 128 49 131 52 136 52 C 131 52 128 55 128 60 C 128 55 125 52 120 52 C 125 52 128 49 128 44 Z"
+          fill="#ffffff" opacity="0.95"/>
+  </g>
 
-  <!-- Friso de luz contínuo na curvatura superior da sacola -->
-  <path d="M 64 72 L 192 72"
+  <!-- Placa frontal da caixa com cantos arredondados (rx 28 idêntico ao Files) -->
+  <rect x="36" y="96" width="184" height="126" rx="28" ry="28"
+        fill="url(#front-crate)"
+        filter="url(#shadow)"/>
+
+  <!-- Friso contínuo de luz especular na curvatura superior -->
+  <path d="M 64 102 L 192 102"
         stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/>
+
+  <!-- Glifo Frontal: Seta de instalação / download do COSMIC Store -->
+  <g filter="url(#shadow-arrow)">
+    <!-- Haste vertical -->
+    <path d="M 128 128 L 128 162"
+          stroke="#ffffff" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <!-- Ponta em V -->
+    <path d="M 115 149 L 128 162 L 141 149"
+          stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <!-- Berço / Linha receptora de download -->
+    <rect x="108" y="174" width="40" height="5" rx="2.5" fill="#e0f2fe"/>
+  </g>
 </svg>
