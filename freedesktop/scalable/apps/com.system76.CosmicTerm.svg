@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <!-- Chassi do monitor espacial de bordo -->
+    <linearGradient id="term-chassis" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#082f49"/>
+    </linearGradient>
+
+    <!-- Tela CRT / Display cósmico profundo -->
+    <linearGradient id="term-screen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#050d1a"/>
+      <stop offset="100%" stop-color="#0b172a"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <!-- Chassi principal com cantos bem arredondados (rx 28) -->
+  <rect x="28" y="38" width="200" height="180" rx="28" ry="28"
+        fill="url(#term-chassis)"
+        filter="url(#shadow)"/>
+
+  <!-- Tela interna arredondada (Display CRT de bordo) -->
+  <rect x="46" y="56" width="164" height="126" rx="18" ry="18"
+        fill="url(#term-screen)"/>
+
+  <!-- Prompt cósmico em ciano luminoso (> _) -->
+  <path d="M 68 86 L 86 100 L 68 114"
+        stroke="#38bdf8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Cursor em bloco arredondado -->
+  <rect x="96" y="90" width="12" height="20" rx="3" fill="#38bdf8"/>
+
+  <!-- Linha secundária de telemetria/código suave -->
+  <rect x="68" y="132" width="56" height="5" rx="2.5" fill="#0284c7" opacity="0.6"/>
+  <rect x="132" y="132" width="42" height="5" rx="2.5" fill="#64748b" opacity="0.4"/>
+
+  <!-- Faixas retrô-espaciais no painel inferior (Mission Stripes) -->
+  <rect x="46" y="193" width="46" height="5" rx="2.5" fill="#f59e0b"/>
+  <rect x="46" y="201" width="34" height="5" rx="2.5" fill="#38bdf8"/>
+
+  <!-- LEDs de status óptico de bordo -->
+  <circle cx="186" cy="199" r="3.5" fill="#10b981" opacity="0.85"/>
+  <circle cx="199" cy="199" r="4.5" fill="#38bdf8"/>
+  <circle cx="199" cy="199" r="2" fill="#ffffff"/>
+
+  <!-- Brilho sutil contínuo na curvatura superior do chassi -->
+  <path d="M 56 44 L 200 44"
+        stroke="#38bdf8" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+</svg>
