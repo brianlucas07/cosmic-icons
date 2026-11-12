@@ -1,14 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
   <!-- Chassi com cantos arredondados -->
-  <rect x="1.5" y="1" width="13" height="14" rx="2.5" ry="2.5" fill="currentColor"/>
-  <!-- Feixe e vetor de download em destaque -->
+  <rect x="1" y="1.5" width="14" height="13" rx="2.5" ry="2.5" fill="currentColor"/>
+  <!-- Seta de instalação/download -->
   <path d="M 8 3.5 L 8 9.5 M 5.5 7.5 L 8 10 L 10.5 7.5"
         stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <!-- Berço receptor de pacotes -->
-  <path d="M 5.5 11.8 L 10.5 11.8"
-        stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-  <!-- Faixa de missão retrô sutil na base -->
-  <rect x="2.5" y="12.8" width="2" height="0.75" rx="0.375" fill="#ffffff" opacity="0.75"/>
-  <!-- LED de telemetria -->
-  <circle cx="13" cy="12.8" r="0.6" fill="#ffffff" opacity="0.8"/>
+  <!-- Berço receptor -->
+  <path d="M 5 10.5 V 12 C 5 12.5 5.5 12.8 6 12.8 H 10 C 10.5 12.8 11 12.5 11 12 V 10.5"
+        stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
 </svg>
