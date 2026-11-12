@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <!-- Chassi do módulo de transmissão orbital -->
+    <linearGradient id="store-chassis" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#082f49"/>
+    </linearGradient>
+
+    <!-- Câmara interna de acoplamento de pacotes -->
+    <linearGradient id="store-chamber" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#060e1c"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <!-- Chassi principal do módulo aeroespacial (rx 28) -->
+  <rect x="32" y="34" width="192" height="188" rx="28" ry="28"
+        fill="url(#store-chassis)"
+        filter="url(#shadow)"/>
+
+  <!-- Câmara de carga / Baia de acoplamento orbital -->
+  <rect x="50" y="52" width="156" height="118" rx="20" ry="20"
+        fill="url(#store-chamber)"/>
+
+  <!-- Anel de telemetria orbital / Sensores laterais -->
+  <circle cx="82" cy="80" r="3.5" fill="#38bdf8" opacity="0.75"/>
+  <circle cx="174" cy="80" r="3.5" fill="#38bdf8" opacity="0.75"/>
+
+  <!-- Berço de recepção de pacotes (Cradle em Ciano) -->
+  <path d="M 96 128 C 96 146 110 156 128 156 C 146 156 160 146 160 128"
+        stroke="#38bdf8" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+  <!-- Feixe de download de software em Âmbar solar -->
+  <path d="M 128 74 L 128 128"
+        stroke="#f59e0b" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <!-- Ponta do vetor de download -->
+  <path d="M 115 116 L 128 129 L 141 116"
+        stroke="#f59e0b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Faixas retrô-espaciais no painel inferior (Mission Stripes) -->
+  <rect x="52" y="186" width="46" height="5" rx="2.5" fill="#f59e0b"/>
+  <rect x="52" y="194" width="34" height="5" rx="2.5" fill="#38bdf8"/>
+
+  <!-- Cápsula de telemetria / Status do repositório -->
+  <rect x="146" y="184" width="60" height="18" rx="9" ry="9" fill="#0b1329" fill-opacity="0.45"/>
+  <circle cx="158" cy="193" r="3" fill="#10b981"/>
+  <rect x="168" y="191" width="26" height="4" rx="2" fill="#e0f2fe" opacity="0.8"/>
+
+  <!-- Brilho sutil contínuo na curvatura superior -->
+  <path d="M 58 40 L 198 40"
+        stroke="#38bdf8" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+</svg>

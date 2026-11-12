@@ -1,11 +1,14 @@
-<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_1527_4681)">
-<path d="M8.03101 0C3.62501 0 0.0310059 3.594 0.0310059 8C0.0310059 12.406 3.62501 16 8.03101 16C12.437 16 16.031 12.406 16.031 8C16.031 3.594 12.437 0 8.03101 0ZM7.03101 4H9.03101V8H11.031L8.03101 12.5L5.03101 8H7.03101V4Z" fill="#232323"/>
-<path d="M0.0310059 0H16.031V16H0.0310059V0Z" fill="#808080" fill-opacity="0.00"/>
-</g>
-<defs>
-<clipPath id="clip0_1527_4681">
-<rect width="16" height="16" fill="white" transform="translate(0.0310059)"/>
-</clipPath>
-</defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <!-- Chassi com cantos arredondados -->
+  <rect x="1.5" y="1" width="13" height="14" rx="2.5" ry="2.5" fill="currentColor"/>
+  <!-- Feixe e vetor de download em destaque -->
+  <path d="M 8 3.5 L 8 9.5 M 5.5 7.5 L 8 10 L 10.5 7.5"
+        stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Berço receptor de pacotes -->
+  <path d="M 5.5 11.8 L 10.5 11.8"
+        stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  <!-- Faixa de missão retrô sutil na base -->
+  <rect x="2.5" y="12.8" width="2" height="0.75" rx="0.375" fill="#ffffff" opacity="0.75"/>
+  <!-- LED de telemetria -->
+  <circle cx="13" cy="12.8" r="0.6" fill="#ffffff" opacity="0.8"/>
 </svg>
