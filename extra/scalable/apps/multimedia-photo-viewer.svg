@@ -1,1 +1,102 @@
-<svg version="1.0" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-464 -28)"><rect x="480" y="84" width="224" height="176" ry="16" fill="#245c63"/><rect x="481" y="85" width="222" height="170" ry="15.5" fill="#48b9c7"/><rect x="504" y="108" width="176" height="120" ry="8" fill="#f6f6f6"/><path d="M528 116v68l24-24 24 24 40-40 40 40v-68z" fill="#1c8d9b" opacity=".5"/><path d="m592 152 64 68H528z" fill="#1c8d9b"/><rect x="610" y="176.01" width="104" height="91.987" ry="20.5" fill="#671d00"/><rect x="611" y="177" width="102" height="86" ry="20" fill="#cf3b00"/><path d="M662 200a35.756 36 0 0 0-32 20.039A35.756 36 0 0 0 662 240a35.756 36 0 0 0 32-20.039A35.756 36 0 0 0 662 200zm0 4a16 16 0 0 1 16 16 16 16 0 0 1-16 16 16 16 0 0 1-16-16 16 16 0 0 1 16-16zm0 8a8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8z" fill="#fff"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <!-- Moldura externa squircle (Ciano vibrante a azul cósmico) -->
+    <linearGradient id="frame-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+
+    <!-- Céu noturno cósmico profundo -->
+    <linearGradient id="sky-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#060e1c"/>
+      <stop offset="65%" stop-color="#0b2545"/>
+      <stop offset="100%" stop-color="#075985"/>
+    </linearGradient>
+
+    <!-- Planeta luminoso -->
+    <linearGradient id="planet-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f9ff"/>
+      <stop offset="50%" stop-color="#7dd3fc"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+
+    <!-- Anel orbital do planeta -->
+    <linearGradient id="ring-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+
+    <!-- Montanha traseira -->
+    <linearGradient id="mountain-back" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#075985"/>
+    </linearGradient>
+
+    <!-- Montanha frontal iluminada -->
+    <linearGradient id="mountain-front" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+
+    <!-- Recorte da tela de imagem -->
+    <clipPath id="canvas-clip">
+      <rect x="50" y="50" width="156" height="156" rx="18" ry="18"/>
+    </clipPath>
+
+    <!-- Sombra suave da moldura -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-opacity="0.26"/>
+    </filter>
+  </defs>
+
+  <!-- Moldura Base Squircle (rx 28 — idêntica à família) -->
+  <rect x="36" y="36" width="184" height="184" rx="28" ry="28"
+        fill="url(#frame-grad)"
+        filter="url(#shadow)"/>
+
+  <!-- Friso de luz especular contínuo na curvatura superior -->
+  <path d="M 64 42 L 192 42"
+        stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/>
+
+  <!-- Tela Interna da Fotografia Cósmica -->
+  <g clip-path="url(#canvas-clip)">
+    <!-- Fundo do céu estrelado -->
+    <rect x="50" y="50" width="156" height="156" fill="url(#sky-grad)"/>
+
+    <!-- Estrelas cósmicas de 4 pontas -->
+    <path d="M 172 66 C 172 70 174 72 178 72 C 174 72 172 74 172 78 C 172 74 170 72 166 72 C 170 72 172 70 172 66 Z"
+          fill="#ffffff" opacity="0.95"/>
+    <path d="M 154 86 C 154 88.5 155.5 90 158 90 C 155.5 90 154 91.5 154 94 C 154 91.5 152.5 90 150 90 C 152.5 90 154 88.5 154 86 Z"
+          fill="#ffffff" opacity="0.8"/>
+    <path d="M 184 92 C 184 94.5 185.5 96 188 96 C 185.5 96 184 97.5 184 100 C 184 97.5 182.5 96 180 96 C 182.5 96 184 94.5 184 92 Z"
+          fill="#bae6fd" opacity="0.85"/>
+
+    <!-- Planeta Anelado do COSMIC Viewer -->
+    <g transform="translate(100, 96)">
+      <!-- Arco traseiro do anel -->
+      <path d="M -38 0 A 38 10 0 0 1 38 0"
+            transform="rotate(-24)"
+            fill="none" stroke="url(#ring-grad)" stroke-width="4" opacity="0.65"/>
+      <!-- Esfera do planeta -->
+      <circle cx="0" cy="0" r="21" fill="url(#planet-grad)"/>
+      <!-- Arco frontal do anel passando à frente da esfera -->
+      <path d="M 38 0 A 38 10 0 0 1 -38 0"
+            transform="rotate(-24)"
+            fill="none" stroke="url(#ring-grad)" stroke-width="4.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Cordilheira Traseira -->
+    <path d="M 46 186 L 84 144 C 87 141 91 141 94 144 L 124 172 L 164 124 C 167 120 172 120 176 124 L 210 162 V 210 H 46 Z"
+          fill="url(#mountain-back)"/>
+
+    <!-- Cordilheira Frontal Iluminada -->
+    <path d="M 46 198 L 92 156 C 95 153 100 153 103 156 L 130 180 L 172 136 C 175 133 180 133 183 136 L 210 166 V 210 H 46 Z"
+          fill="url(#mountain-front)"/>
+  </g>
+
+  <!-- Borda interna sutil de acabamento da moldura -->
+  <rect x="50" y="50" width="156" height="156" rx="18" ry="18"
+        fill="none"
+        stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.32"/>
+</svg>
