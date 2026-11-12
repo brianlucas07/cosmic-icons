@@ -1,22 +1,39 @@
-<svg width="256" height="256" fill="none" version="1.1" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
- <path d="m8 56c0-8.8366 7.1634-16 16-16h71.797c3.3814 0 6.6759 1.0713 9.4109 3.0602l13.584 9.8796c2.735 1.9889 6.029 3.0602 9.411 3.0602h103.8c8.837 0 16 7.1634 16 16v128c0 8.837-7.163 16-16 16h-208c-8.8366 0-16-7.163-16-16z" fill="url(#paint0_linear_2449_564)"/>
- <path d="m8 88c0-8.8366 7.1634-16 16-16h208c8.837 0 16 7.1634 16 16v112c0 8.837-7.163 16-16 16h-208c-8.8366 0-16-7.163-16-16z" fill="url(#paint1_linear_2449_564)"/>
- <g fill="#fff">
-  <path d="m180 115c0 11.046-8.954 20-20 20-3.033 0-5.908-0.675-8.484-1.883 0.873-2.545 1.347-5.276 1.347-8.117 0-8.237-3.984-15.544-10.13-20.099 3.472-5.9233 9.905-9.901 17.267-9.901 11.046 0 20 8.954 20 20z"/>
-  <path d="m96 135c2.9867 0 5.82-0.655 8.366-1.828-0.886-2.561-1.366-5.31-1.366-8.172 0-8.28 4.025-15.62 10.225-20.169-3.481-5.8848-9.892-9.831-17.225-9.831-11.046 0-20 8.954-20 20s8.9543 20 20 20z"/>
-  <path d="m120.9 153.03c-37.899 0.939-37.899 26.757-37.899 26.757v2.217h-27v-7.217s0-26.763 40-26.783c11.09-6e-3 19.106 2.05 24.899 5.026z"/>
-  <path d="m135 153.03c37.899 0.94 37.899 26.757 37.899 26.757v2.217h27v-7.217s0-26.763-40-26.783c-11.09-6e-3 -19.106 2.051-24.899 5.026z"/>
-  <path d="m168 184.78s0-26.803-40-26.783-40 26.783-40 26.783v7.217h80v-7.217z"/>
-  <path d="m148 125c0 11.046-8.954 20-20 20s-20-8.954-20-20 8.954-20 20-20 20 8.954 20 20z"/>
- </g>
- <defs>
-  <linearGradient id="paint0_linear_2449_564" x1="121" x2="121" y1="72.5" y2="40" gradientUnits="userSpaceOnUse">
-   <stop stop-color="#484848" offset="0"/>
-   <stop stop-color="#636363" offset="1"/>
-  </linearGradient>
-  <linearGradient id="paint1_linear_2449_564" x1="248" x2="40.837" y1="72" y2="253.48" gradientUnits="userSpaceOnUse">
-   <stop stop-color="#979FAD" offset="0"/>
-   <stop stop-color="#808080" offset="1"/>
-  </linearGradient>
- </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="back-folder" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#68707d"/>
+      <stop offset="100%" stop-color="#4b525d"/>
+    </linearGradient>
+    <linearGradient id="front-folder" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9ca4b2"/>
+      <stop offset="100%" stop-color="#7d8594"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-opacity="0.24"/>
+    </filter>
+    <filter id="glyph-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Placa traseira da pasta -->
+  <path d="M 36 64 C 36 48 48 36 64 36 L 100 36 C 112 36 122 46 128 56 L 134 66 C 140 76 148 82 160 82 L 192 82 C 208 82 220 94 220 110 L 220 194 C 220 210 208 222 192 222 L 64 222 C 48 222 36 210 36 194 Z"
+        fill="url(#back-folder)"/>
+
+  <!-- Aba frontal (rx 28) -->
+  <rect x="36" y="96" width="184" height="126" rx="28" ry="28"
+        fill="url(#front-folder)"
+        filter="url(#shadow)"/>
+
+  <!-- Friso de luz superior -->
+  <path d="M 64 102 L 192 102"
+        stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/>
+
+  <!-- Glifo Compartilhamento Público (Usuários) -->
+  <g filter="url(#glyph-shadow)" fill="#ffffff">
+    <circle cx="116" cy="142" r="14"/>
+    <path d="M 88 186 C 88 171 100.5 162 116 162 C 131.5 162 144 171 144 186 V 192 H 88 V 186 Z"/>
+    <circle cx="148" cy="146" r="11" opacity="0.85"/>
+    <path d="M 146 164 C 158 165 168 173 168 186 V 192 H 150 V 186 C 150 177 148 170 146 164 Z" opacity="0.85"/>
+  </g>
 </svg>

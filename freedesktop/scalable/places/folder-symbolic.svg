@@ -1,11 +1,6 @@
-<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_758_3667)">
-<path d="M0 0H16V16H0V0Z" fill="#808080" fill-opacity="0.00"/>
-<path d="M3 1C2.46957 1 1.96089 1.21071 1.58582 1.58578C1.21074 1.96086 1 2.46957 1 3V12C1 12.5304 1.21074 13.0391 1.58582 13.4142C1.96089 13.7893 2.46957 14 3 14H13C13.5304 14 14.0391 13.7893 14.4142 13.4142C14.7893 13.0391 15 12.5304 15 12V5C15 4.46957 14.7893 3.96086 14.4142 3.58578C14.0391 3.21071 13.5304 3 13 3H9L7 1H3Z" fill="#232323"/>
-</g>
-<defs>
-<clipPath id="clip0_758_3667">
-<rect width="16" height="16" fill="white"/>
-</clipPath>
-</defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <!-- Pasta simbólica squircle (idêntica à família) -->
+  <path d="M 1.5 3.5 C 1.5 2.4 2.4 1.5 3.5 1.5 H 6.2 C 6.8 1.5 7.4 1.8 7.8 2.3 L 8.5 3.2 C 8.8 3.6 9.3 3.8 9.8 3.8 H 12.5 C 13.6 3.8 14.5 4.7 14.5 5.8 V 12 C 14.5 13.4 13.4 14.5 12 14.5 H 4 C 2.6 14.5 1.5 13.4 1.5 12 V 3.5 Z"
+        fill="currentColor" opacity="0.45"/>
+  <rect x="1.5" y="5.5" width="13" height="9" rx="2.5" ry="2.5" fill="currentColor"/>
 </svg>

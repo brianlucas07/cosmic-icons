@@ -1,15 +1,37 @@
-<svg width="256" height="256" fill="none" version="1.1" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
- <path d="m8 56c0-8.8366 7.1634-16 16-16h71.797c3.3814 0 6.6759 1.0713 9.4109 3.0602l13.584 9.8796c2.735 1.9889 6.029 3.0602 9.411 3.0602h103.8c8.837 0 16 7.1634 16 16v128c0 8.837-7.163 16-16 16h-208c-8.8366 0-16-7.163-16-16z" fill="url(#paint0_linear_2053_149)"/>
- <path d="m8 88c0-8.8366 7.1634-16 16-16h208c8.837 0 16 7.1634 16 16v112c0 8.837-7.163 16-16 16h-208c-8.8366 0-16-7.163-16-16z" fill="url(#paint1_linear_2053_175)"/>
- <path d="m102 96c-3.4472 0-6.7533 1.3486-9.191 3.749-2.4376 2.4-3.807 5.656-3.807 9.051v70.4c0 3.395 1.3694 6.651 3.807 9.051 2.4377 2.4 5.7438 3.749 9.191 3.749h51.992c7.084 0 12.829-5.594 12.972-12.538 0.065-7.001 0.033-34.707 0-52.032-0.059-3.189-1.327-6.241-3.554-8.556l-19.296-19.002c-1.211-1.2252-2.659-2.1991-4.259-2.8641-1.599-0.6651-3.318-1.0078-5.054-1.0079z" fill="#fff"/>
- <defs>
-  <linearGradient id="paint1_linear_2053_175" x1="248" x2="40.837" y1="72" y2="253.48" gradientUnits="userSpaceOnUse">
-   <stop stop-color="#979FAD" offset="0"/>
-   <stop stop-color="#808080" offset="1"/>
-  </linearGradient>
-  <linearGradient id="paint0_linear_2053_149" x1="121" x2="121" y1="72.5" y2="40" gradientUnits="userSpaceOnUse">
-   <stop stop-color="#484848" offset="0"/>
-   <stop stop-color="#636363" offset="1"/>
-  </linearGradient>
- </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="back-folder" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#68707d"/>
+      <stop offset="100%" stop-color="#4b525d"/>
+    </linearGradient>
+    <linearGradient id="front-folder" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9ca4b2"/>
+      <stop offset="100%" stop-color="#7d8594"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-opacity="0.24"/>
+    </filter>
+    <filter id="glyph-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Placa traseira da pasta -->
+  <path d="M 36 64 C 36 48 48 36 64 36 L 100 36 C 112 36 122 46 128 56 L 134 66 C 140 76 148 82 160 82 L 192 82 C 208 82 220 94 220 110 L 220 194 C 220 210 208 222 192 222 L 64 222 C 48 222 36 210 36 194 Z"
+        fill="url(#back-folder)"/>
+
+  <!-- Aba frontal (rx 28) -->
+  <rect x="36" y="96" width="184" height="126" rx="28" ry="28"
+        fill="url(#front-folder)"
+        filter="url(#shadow)"/>
+
+  <!-- Friso de luz superior -->
+  <path d="M 64 102 L 192 102"
+        stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/>
+
+  <!-- Glifo Documentos (Folha com canto dobrado suave) -->
+  <g filter="url(#glyph-shadow)" fill="#ffffff">
+    <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M 106 120 C 99.4 120 94 125.4 94 132 V 186 C 94 192.6 99.4 198 106 198 H 150 C 156.6 198 162 192.6 162 186 V 144.8 C 162 141.6 160.7 138.6 158.5 136.3 L 145.7 123.5 C 143.4 121.3 140.4 120 137.2 120 H 106 Z M 110 148 C 107.8 148 106 149.8 106 152 C 106 154.2 107.8 156 110 156 H 134 C 136.2 156 138 154.2 138 152 C 138 149.8 136.2 148 134 148 H 110 Z M 110 166 C 107.8 166 106 167.8 106 170 C 106 172.2 107.8 174 110 174 H 146 C 148.2 174 150 172.2 150 170 C 150 167.8 148.2 166 146 166 H 110 Z"/>
+  </g>
 </svg>

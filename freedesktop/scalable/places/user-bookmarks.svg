@@ -1,1 +1,37 @@
-<svg version="1.0" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><g stroke-linecap="square" stroke-width="8"><path d="M160 232H32c-8.864 0-16-7.136-16-16V72c0-8.864 7.136-16 16-16h128l88 88z" fill="#ffce51"/><path d="M32 56c-8.864 0-16 7.136-16 16v144c0 8.864 7.136 16 16 16h128l88-88-88-88zm0 1h127.5l84.5 85-84.5 85H32c-8.31 0-15-6.69-15-15V72c0-8.31 6.69-15 15-15z" fill-opacity=".5"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="back-folder" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#68707d"/>
+      <stop offset="100%" stop-color="#4b525d"/>
+    </linearGradient>
+    <linearGradient id="front-folder" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9ca4b2"/>
+      <stop offset="100%" stop-color="#7d8594"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-opacity="0.24"/>
+    </filter>
+    <filter id="glyph-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Placa traseira da pasta -->
+  <path d="M 36 64 C 36 48 48 36 64 36 L 100 36 C 112 36 122 46 128 56 L 134 66 C 140 76 148 82 160 82 L 192 82 C 208 82 220 94 220 110 L 220 194 C 220 210 208 222 192 222 L 64 222 C 48 222 36 210 36 194 Z"
+        fill="url(#back-folder)"/>
+
+  <!-- Aba frontal (rx 28) -->
+  <rect x="36" y="96" width="184" height="126" rx="28" ry="28"
+        fill="url(#front-folder)"
+        filter="url(#shadow)"/>
+
+  <!-- Friso de luz superior -->
+  <path d="M 64 102 L 192 102"
+        stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/>
+
+  <!-- Glifo Favoritos / Marcadores (Estrela arredondada) -->
+  <g filter="url(#glyph-shadow)" fill="#ffffff">
+    <path d="M 128 120 L 137.5 141.2 L 160.5 144.1 L 143.6 160.1 L 148.1 183 L 128 171.8 L 107.9 183 L 112.4 160.1 L 95.5 144.1 L 118.5 141.2 Z"
+          stroke="#ffffff" stroke-width="4" stroke-linejoin="round"/>
+  </g>
+</svg>

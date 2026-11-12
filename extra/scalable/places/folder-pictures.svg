@@ -1,20 +1,39 @@
-<svg width="256" height="256" fill="none" version="1.1" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
- <path d="m8 56c0-8.8366 7.1634-16 16-16h71.797c3.3814 0 6.6759 1.0713 9.4109 3.0602l13.584 9.8796c2.735 1.9889 6.029 3.0602 9.411 3.0602h103.8c8.837 0 16 7.1634 16 16v128c0 8.837-7.163 16-16 16h-208c-8.8366 0-16-7.163-16-16z" fill="url(#paint0_linear_2053_149)"/>
- <path d="m8 88c0-8.8366 7.1634-16 16-16h208c8.837 0 16 7.1634 16 16v112c0 8.837-7.163 16-16 16h-208c-8.8366 0-16-7.163-16-16z" fill="url(#paint1_linear_2054_665)"/>
- <g fill="#fff">
-  <path d="m96 96c-13.16 0-24 10.84-24 24v48c0 13.16 10.84 24 24 24h64c13.16 0 24-10.84 24-24v-48c0-13.16-10.84-24-24-24h-64zm0 16h64c4.568 0 8 3.432 8 8v48c0 4.568-3.432 8-8 8h-64c-4.568 0-8-3.432-8-8v-48c0-4.568 3.432-8 8-8z"/>
-  <circle cx="107.5" cy="129.5" r="5.5"/>
-  <path d="m109.33 151 16.667 25h-40l23.333-25z"/>
-  <path d="m141.31 129 28.692 47h-64l35.308-47z"/>
- </g>
- <defs>
-  <linearGradient id="paint1_linear_2054_665" x1="248" x2="40.837" y1="72" y2="253.48" gradientUnits="userSpaceOnUse">
-   <stop stop-color="#979FAD" offset="0"/>
-   <stop stop-color="#808080" offset="1"/>
-  </linearGradient>
-  <linearGradient id="paint0_linear_2053_149" x1="121" x2="121" y1="72.5" y2="40" gradientUnits="userSpaceOnUse">
-   <stop stop-color="#484848" offset="0"/>
-   <stop stop-color="#636363" offset="1"/>
-  </linearGradient>
- </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="back-folder" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#68707d"/>
+      <stop offset="100%" stop-color="#4b525d"/>
+    </linearGradient>
+    <linearGradient id="front-folder" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9ca4b2"/>
+      <stop offset="100%" stop-color="#7d8594"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-opacity="0.24"/>
+    </filter>
+    <filter id="glyph-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Placa traseira da pasta -->
+  <path d="M 36 64 C 36 48 48 36 64 36 L 100 36 C 112 36 122 46 128 56 L 134 66 C 140 76 148 82 160 82 L 192 82 C 208 82 220 94 220 110 L 220 194 C 220 210 208 222 192 222 L 64 222 C 48 222 36 210 36 194 Z"
+        fill="url(#back-folder)"/>
+
+  <!-- Aba frontal (rx 28) -->
+  <rect x="36" y="96" width="184" height="126" rx="28" ry="28"
+        fill="url(#front-folder)"
+        filter="url(#shadow)"/>
+
+  <!-- Friso de luz superior -->
+  <path d="M 64 102 L 192 102"
+        stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/>
+
+  <!-- Glifo Imagens (Quadro com montanhas e sol) -->
+  <g filter="url(#glyph-shadow)" fill="#ffffff">
+    <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M 98 122 C 89.2 122 82 129.2 82 138 V 180 C 82 188.8 89.2 196 98 196 H 158 C 166.8 196 174 188.8 174 180 V 138 C 174 129.2 166.8 122 158 122 H 98 Z M 98 132 H 158 C 161.3 132 164 134.7 164 138 V 180 C 164 183.3 161.3 186 158 186 H 98 C 94.7 186 92 183.3 92 180 V 138 C 92 134.7 94.7 132 98 132 Z"/>
+    <circle cx="110" cy="148" r="6"/>
+    <path d="M 96 180 L 114 160 L 126 172 L 144 150 L 160 180 Z"/>
+  </g>
 </svg>

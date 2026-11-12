@@ -1,15 +1,36 @@
-<svg width="256" height="256" fill="none" version="1.1" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
- <defs>
-  <linearGradient id="paint0_linear_2053_149" x1="121" x2="121" y1="72.5" y2="40" gradientUnits="userSpaceOnUse">
-   <stop stop-color="#484848" offset="0"/>
-   <stop stop-color="#636363" offset="1"/>
-  </linearGradient>
-  <linearGradient id="paint1_linear_2053_149-5" x1="248" x2="40.837" y1="72" y2="253.48" gradientUnits="userSpaceOnUse">
-   <stop stop-color="#979FAD" offset="0"/>
-   <stop stop-color="#808080" offset="1"/>
-  </linearGradient>
- </defs>
- <path d="m8 56c0-8.8366 7.1634-16 16-16h71.797c3.3814 0 6.6759 1.0713 9.4109 3.0602l13.584 9.8796c2.735 1.9889 6.029 3.0602 9.411 3.0602h103.8c8.837 0 16 7.1634 16 16v128c0 8.837-7.163 16-16 16h-208c-8.8366 0-16-7.163-16-16z" fill="url(#paint0_linear_2053_149)"/>
- <path d="m8 88c0-8.8366 7.1634-16 16-16h208c8.837 0 16 7.1634 16 16v112c0 8.837-7.163 16-16 16h-208c-8.8366 0-16-7.163-16-16z" fill="url(#paint1_linear_2053_149-5)"/>
- <path transform="matrix(.94231 0 0 .94231 7.3847 7.8366)" d="m128 92.5-56 47.969h12v56.031l48-0.031v-39.969h24v39.969l16 0.031v-56.031h12zm-28 63.969h16v16h-16z" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="back-folder" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#68707d"/>
+      <stop offset="100%" stop-color="#4b525d"/>
+    </linearGradient>
+    <linearGradient id="front-folder" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9ca4b2"/>
+      <stop offset="100%" stop-color="#7d8594"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-opacity="0.24"/>
+    </filter>
+    <filter id="glyph-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Placa traseira da pasta -->
+  <path d="M 36 64 C 36 48 48 36 64 36 L 100 36 C 112 36 122 46 128 56 L 134 66 C 140 76 148 82 160 82 L 192 82 C 208 82 220 94 220 110 L 220 194 C 220 210 208 222 192 222 L 64 222 C 48 222 36 210 36 194 Z"
+        fill="url(#back-folder)"/>
+
+  <!-- Aba frontal (rx 28) -->
+  <rect x="36" y="96" width="184" height="126" rx="28" ry="28"
+        fill="url(#front-folder)"
+        filter="url(#shadow)"/>
+
+  <!-- Friso de luz superior -->
+  <path d="M 64 102 L 192 102"
+        stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/>
+
+  <!-- Glifo Casa (User Home) -->
+  <g filter="url(#glyph-shadow)" fill="#ffffff">
+    <path d="M 125.2 120.8 C 126.8 119.4 129.2 119.4 130.8 120.8 L 166 151.5 C 167.8 153.1 166.7 156 164.3 156 H 156 V 188 C 156 191.3 153.3 194 150 194 H 136 V 170 C 136 167.8 134.2 166 132 166 H 124 C 121.8 166 120 167.8 120 170 V 194 H 106 C 102.7 194 100 191.3 100 188 V 156 H 91.7 C 89.3 156 88.2 153.1 90 151.5 L 125.2 120.8 Z"/>
+  </g>
 </svg>
