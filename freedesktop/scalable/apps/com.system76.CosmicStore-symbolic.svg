@@ -1,10 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-  <!-- Chassi com cantos arredondados -->
-  <rect x="1" y="1.5" width="14" height="13" rx="2.5" ry="2.5" fill="currentColor"/>
-  <!-- Seta de instalação/download -->
-  <path d="M 8 3.5 L 8 9.5 M 5.5 7.5 L 8 10 L 10.5 7.5"
-        stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <!-- Berço receptor -->
-  <path d="M 5 10.5 V 12 C 5 12.5 5.5 12.8 6 12.8 H 10 C 10.5 12.8 11 12.5 11 12 V 10.5"
+  <!-- Alça da sacola -->
+  <path d="M 5.5 5.5 V 3.5 C 5.5 2.1 6.6 1 8 1 C 9.4 1 10.5 2.1 10.5 3.5 V 5.5"
+        stroke="currentColor" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+  <!-- Corpo da sacola com cantos arredondados -->
+  <rect x="2" y="4.5" width="12" height="10" rx="2.5" ry="2.5" fill="currentColor"/>
+  <!-- Seta central de instalação -->
+  <path d="M 8 7 L 8 10.5 M 6.5 9.2 L 8 10.7 L 9.5 9.2"
         stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <rect x="6.5" y="12" width="3" height="0.8" rx="0.4" fill="#ffffff"/>
 </svg>
