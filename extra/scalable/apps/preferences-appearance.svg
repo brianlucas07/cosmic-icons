@@ -1,21 +1,31 @@
 <svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="8" y="40" width="240" height="176" rx="16" fill="url(#paint0_linear_2600_332)"/>
-<rect x="24" y="64" width="208" height="136" rx="16" fill="url(#paint1_linear_2600_332)"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M216 64H128V200H216C224.837 200 232 192.837 232 184V80C232 71.1634 224.837 64 216 64Z" fill="url(#paint2_linear_2600_332)"/>
-<rect x="40" y="152" width="176" height="32" rx="16" fill="white"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M128 184H200C208.837 184 216 176.837 216 168C216 159.163 208.837 152 200 152H128V184Z" fill="#00525A"/>
-<defs>
-<linearGradient id="paint0_linear_2600_332" x1="128" y1="40" x2="128" y2="216" gradientUnits="userSpaceOnUse">
-<stop stop-color="#3EB0BE"/>
-<stop offset="1" stop-color="#05919F"/>
-</linearGradient>
-<linearGradient id="paint1_linear_2600_332" x1="128" y1="64" x2="128" y2="200" gradientUnits="userSpaceOnUse">
-<stop stop-color="#05919F"/>
-<stop offset="1" stop-color="#00717C"/>
-</linearGradient>
-<linearGradient id="paint2_linear_2600_332" x1="180" y1="64" x2="180" y2="200" gradientUnits="userSpaceOnUse">
-<stop stop-color="#C9F9FF"/>
-<stop offset="1" stop-color="#88F1FF"/>
-</linearGradient>
-</defs>
+  <defs>
+    <linearGradient id="app_bg" x1="128" y1="20" x2="128" y2="236" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <filter id="drop_app_bg" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#020617" flood-opacity="0.45"/>
+    </filter>
+    <filter id="in_app_bg" x="-12%" y="-12%" width="124%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+    
+  </defs>
+  <rect x="20" y="20" width="216" height="216" rx="28" fill="url(#app_bg)" filter="url(#drop_app_bg)"/>
+  <path d="M 48 21.5 H 208" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/>
+  
+  <!-- Left Dark Half & Right Light Half -->
+  <path d="M 56 40 H 128 V 216 H 56 C 44.95 216 36 207.05 36 196 V 60 C 36 48.95 44.95 40 56 40 Z" fill="#0f172a"/>
+  <path d="M 128 40 H 200 C 211.05 40 220 48.95 220 60 V 196 C 220 207.05 211.05 216 200 216 H 128 V 40 Z" fill="#e0f2fe"/>
+  <!-- Accent Color Swatches -->
+  <g filter="url(#in_app_bg)">
+    <circle cx="82" cy="96" r="18" fill="#38bdf8"/>
+    <circle cx="128" cy="96" r="18" fill="#fbbf24"/>
+    <circle cx="174" cy="96" r="18" fill="#a855f7"/>
+    <!-- Theme Bar -->
+    <rect x="54" y="152" width="148" height="32" rx="16" fill="#ffffff"/>
+    <path d="M 128 152 H 186 C 194.84 152 202 159.16 202 168 C 202 176.84 194.84 184 186 184 H 128 V 152 Z" fill="#0284c7"/>
+  </g>
+
 </svg>

@@ -1,10 +1,25 @@
 <svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M24 40C24 31.1634 31.1634 24 40 24H216C224.837 24 232 31.1634 232 40V216C232 224.837 224.837 232 216 232H40C31.1634 232 24 224.837 24 216V40Z" fill="url(#paint0_linear_2668_370)"/>
-<path d="M68 68C68 68 58 68 58 78V168C58 178 68 178 68 178H88L98 188H158L168 178H188C188 178 198 179.3 198 168V78C198 68 188 68 188 68H68ZM78 88H88V118H108V88H118V118H138V88H148V118H168V88H178V158H158L148 168H108L98 158H78V88Z" fill="white"/>
-<defs>
-<linearGradient id="paint0_linear_2668_370" x1="24" y1="232" x2="232" y2="24" gradientUnits="userSpaceOnUse">
-<stop stop-color="#6E605A"/>
-<stop offset="1" stop-color="#8C7C77"/>
-</linearGradient>
-</defs>
+  <defs>
+    <linearGradient id="wrd_bg" x1="128" y1="20" x2="128" y2="236" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0369a1"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="drop_wrd_bg" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#020617" flood-opacity="0.45"/>
+    </filter>
+    <filter id="in_wrd_bg" x="-12%" y="-12%" width="124%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+    
+  </defs>
+  <rect x="20" y="20" width="216" height="216" rx="28" fill="url(#wrd_bg)" filter="url(#drop_wrd_bg)"/>
+  <path d="M 48 21.5 H 208" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/>
+  
+  <g filter="url(#in_wrd_bg)">
+    <path d="M 128 96 V 132 M 76 132 H 180 M 76 132 V 162 M 180 132 V 162" stroke="#38bdf8" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="94" y="52" width="68" height="48" rx="14" fill="#f8fafc"/>
+    <rect x="46" y="156" width="60" height="46" rx="14" fill="#38bdf8"/>
+    <rect x="150" y="156" width="60" height="46" rx="14" fill="#38bdf8"/>
+  </g>
+
 </svg>

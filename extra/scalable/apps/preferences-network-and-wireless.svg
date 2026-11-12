@@ -1,11 +1,25 @@
 <svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M24 40C24 31.1634 31.1634 24 40 24H216C224.837 24 232 31.1634 232 40V216C232 224.837 224.837 232 216 232H40C31.1634 232 24 224.837 24 216V40Z" fill="url(#paint0_linear_2668_341)"/>
-<path opacity="0.35" d="M128 70C176.5 70 206 102 206 102L142 180C142 180 137 186 128 186C119 186 114 180 114 180L50 102C50 102 79.5 70 128 70Z" fill="white"/>
-<path d="M68.8716 125L114 180C114 180 119 186 128 186C137 186 142 180 142 180L187.128 125C187.128 125 169 99 128 99C86.9998 99 68.8716 125 68.8716 125Z" fill="white"/>
-<defs>
-<linearGradient id="paint0_linear_2668_341" x1="24" y1="232" x2="232" y2="24" gradientUnits="userSpaceOnUse">
-<stop stop-color="#00717C"/>
-<stop offset="1" stop-color="#05919F"/>
-</linearGradient>
-</defs>
+  <defs>
+    <linearGradient id="net_bg" x1="128" y1="20" x2="128" y2="236" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="drop_net_bg" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#020617" flood-opacity="0.45"/>
+    </filter>
+    <filter id="in_net_bg" x="-12%" y="-12%" width="124%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+    
+  </defs>
+  <rect x="20" y="20" width="216" height="216" rx="28" fill="url(#net_bg)" filter="url(#drop_net_bg)"/>
+  <path d="M 48 21.5 H 208" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/>
+  
+  <g filter="url(#in_net_bg)">
+    <path d="M 42.44 98.44 A 121.00 121.00 0 0 1 213.56 98.44 A 9.00 9.00 0 0 1 200.83 111.17 A 103.00 103.00 0 0 0 55.17 111.17 A 9.00 9.00 0 0 1 42.44 98.44 Z" fill="#38bdf8"/>
+    <path d="M 67.90 123.90 A 85.00 85.00 0 0 1 188.10 123.90 A 9.00 9.00 0 0 1 175.38 136.62 A 67.00 67.00 0 0 0 80.62 136.62 A 9.00 9.00 0 0 1 67.90 123.90 Z" fill="#bae6fd"/>
+    <path d="M 93.35 149.35 A 49.00 49.00 0 0 1 162.65 149.35 A 9.00 9.00 0 0 1 149.92 162.08 A 31.00 31.00 0 0 0 106.08 162.08 A 9.00 9.00 0 0 1 93.35 149.35 Z" fill="#ffffff"/>
+    <circle cx="128" cy="184" r="16" fill="#fbbf24"/>
+  </g>
+
 </svg>

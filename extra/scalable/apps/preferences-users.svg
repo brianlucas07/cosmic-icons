@@ -1,13 +1,25 @@
 <svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M24 40C24 31.1634 31.1634 24 40 24H216C224.837 24 232 31.1634 232 40V216C232 224.837 224.837 232 216 232H40C31.1634 232 24 224.837 24 216V40Z" fill="url(#paint0_linear_2616_156)"/>
-<path d="M144.857 99.7144C144.857 107.011 142.095 113.662 137.558 118.679C141.188 125.419 148.309 130 156.5 130C168.374 130 178 120.374 178 108.5C178 96.6254 168.374 86.9995 156.5 86.9995C151.654 86.9995 147.183 88.6028 143.587 91.3079C144.413 93.9636 144.857 96.787 144.857 99.7144Z" fill="white"/>
-<path d="M147.636 143.538C162.355 149.336 172.286 160.02 172.286 176V179H200V172.333C200 152.333 180.154 143 157 143C153.801 143 150.665 143.178 147.636 143.538Z" fill="white"/>
-<path d="M138 96.5C138 112.24 125.24 125 109.5 125C93.7599 125 81 112.24 81 96.5C81 80.7599 93.7599 68 109.5 68C125.24 68 138 80.7599 138 96.5Z" fill="white"/>
-<path d="M54 179.481C54 153.926 79.6154 142 109.5 142C139.385 142 165 153.926 165 179.481C165 182.808 165 188 165 188H54C54 188 54 182.808 54 179.481Z" fill="white"/>
-<defs>
-<linearGradient id="paint0_linear_2616_156" x1="24" y1="232" x2="232" y2="24" gradientUnits="userSpaceOnUse">
-<stop stop-color="#6582AA"/>
-<stop offset="1" stop-color="#82A1CA"/>
-</linearGradient>
-</defs>
+  <defs>
+    <linearGradient id="usr_bg" x1="128" y1="20" x2="128" y2="236" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="drop_usr_bg" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#020617" flood-opacity="0.45"/>
+    </filter>
+    <filter id="in_usr_bg" x="-12%" y="-12%" width="124%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+    
+  </defs>
+  <rect x="20" y="20" width="216" height="216" rx="28" fill="url(#usr_bg)" filter="url(#drop_usr_bg)"/>
+  <path d="M 48 21.5 H 208" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/>
+  
+  <g filter="url(#in_usr_bg)">
+    <circle cx="162" cy="96" r="26" fill="#38bdf8"/>
+    <path d="M 118 184 C 118 152 138 134 162 134 C 186 134 206 152 206 184 C 206 192 200 198 192 198 H 132 C 124 198 118 192 118 184 Z" fill="#38bdf8"/>
+    <circle cx="102" cy="88" r="32" fill="#f8fafc"/>
+    <path d="M 48 188 C 48 150 72 130 102 130 C 132 130 156 150 156 188 C 156 196 150 202 142 202 H 62 C 54 202 48 196 48 188 Z" fill="#f8fafc"/>
+  </g>
+
 </svg>
