@@ -1,11 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-  <!-- Alça da sacola -->
-  <path d="M 5.5 5.5 V 3.5 C 5.5 2.1 6.6 1 8 1 C 9.4 1 10.5 2.1 10.5 3.5 V 5.5"
-        stroke="currentColor" stroke-width="1.2" stroke-linecap="round" fill="none"/>
-  <!-- Corpo da sacola com cantos arredondados -->
-  <rect x="2" y="4.5" width="12" height="10" rx="2.5" ry="2.5" fill="currentColor"/>
-  <!-- Seta central de instalação -->
-  <path d="M 8 7 L 8 10.5 M 6.5 9.2 L 8 10.7 L 9.5 9.2"
+  <!-- Cartões superiores de aplicativos espiando -->
+  <rect x="3.5" y="2" width="3" height="3" rx="0.8" fill="currentColor" opacity="0.6"/>
+  <rect x="9.5" y="2" width="3" height="3" rx="0.8" fill="currentColor" opacity="0.6"/>
+  <rect x="6.5" y="1" width="3" height="4" rx="0.8" fill="currentColor" opacity="0.85"/>
+  <!-- Corpo da caixa squircle da loja -->
+  <rect x="2" y="4" width="12" height="10.5" rx="2.5" fill="currentColor"/>
+  <!-- Seta central de instalação / download em recorte negativo -->
+  <path d="M 8 6.5 L 8 10 M 6.5 8.7 L 8 10.2 L 9.5 8.7"
         stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <rect x="6.5" y="12" width="3" height="0.8" rx="0.4" fill="#ffffff"/>
+  <rect x="6.5" y="11.5" width="3" height="0.8" rx="0.4" fill="#ffffff"/>
 </svg>

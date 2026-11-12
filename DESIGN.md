@@ -44,7 +44,7 @@ A identidade do tema une a **clareza semântica dos objetos clássicos** (a past
 - 📂 **Gerenciador de Arquivos (`COSMIC Files`)**: Pasta clássica com aba traseira curva, corpo frontal arredondado (`rx="28"`), folha de documento interna e friso de luz superior.
 - 📝 **Editor de Texto (`COSMIC Edit`)**: Bloco de notas com cantos arredondados, linhas suaves de texto e um lápis moderno estilizado cruzando na frente com sombra projetada.
 - 💻 **Terminal (`COSMIC Term`)**: Janela flutuante moderna com cantos arredondados, aba superior ativa estilo COSMIC Term e prompt cósmico `>_` em ciano com cursor em bloco.
-- 🛍️ **Loja de Aplicativos (`COSMIC Store`)**: Sacola de aplicativos moderna com cantos arredondados (`rx="28"`), alça superior curva e seta de download centralizada.
+- 🛍️ **Loja de Aplicativos (`COSMIC Store`)**: Caixa/embalagem de software com cantos arredondados (`rx="28"`), múltiplos cartões de aplicativos (teal, púrpura cósmico e âmbar solar) emergindo no topo e seta central de instalação com berço luminoso.
 
 ---
 
