@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-  <!-- Janela de terminal com cantos arredondados -->
+  <!-- Janela de terminal moderna com cantos arredondados -->
   <rect x="1.5" y="1.5" width="13" height="13" rx="2.5" ry="2.5" fill="currentColor"/>
-  <!-- Linha divisória da barra de título -->
-  <path d="M 1.5 5 L 14.5 5" stroke="#ffffff" stroke-width="0.75" opacity="0.35"/>
-  <!-- Prompt em destaque luminoso -->
-  <path d="M 4 7.5 L 6.5 9.5 L 4 11.5"
+  <!-- Barra de título sutil -->
+  <line x1="1.5" y1="4.8" x2="14.5" y2="4.8" stroke="#ffffff" stroke-width="0.8" opacity="0.35"/>
+  <!-- Chevron pro '❯' -->
+  <path d="M 4 7.5 L 6.8 9.5 L 4 11.5"
         stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
   <!-- Cursor em bloco -->
-  <rect x="8" y="10" width="3.5" height="1.5" rx="0.5" fill="#ffffff"/>
+  <rect x="8.5" y="9" width="3.5" height="1.8" rx="0.5" fill="#ffffff"/>
 </svg>
