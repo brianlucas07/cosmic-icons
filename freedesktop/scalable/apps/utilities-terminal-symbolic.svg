@@ -1,13 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-  <!-- Chassi modular com cantos bem arredondados -->
+  <!-- Chassi com cantos arredondados -->
   <rect x="1" y="1.5" width="14" height="13" rx="2.5" ry="2.5" fill="currentColor"/>
   <!-- Prompt em destaque luminoso -->
   <path d="M 4 5 L 6.5 7.5 L 4 10"
         stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
   <!-- Cursor em bloco -->
   <rect x="8" y="8.5" width="3.5" height="1.5" rx="0.5" fill="#ffffff"/>
-  <!-- Faixas sutis de missão no rodapé -->
-  <rect x="2.5" y="12.5" width="3" height="0.75" rx="0.375" fill="#ffffff" opacity="0.7"/>
-  <!-- LED de status no canto direito -->
-  <circle cx="13" cy="12.75" r="0.6" fill="#ffffff" opacity="0.85"/>
 </svg>
