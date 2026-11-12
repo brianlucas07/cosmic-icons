@@ -1,1 +1,70 @@
-<svg version="1.0" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-464 -28)"><path d="M511.5 43a8.481 8.481 0 0 0-8.5 8.5v214c0 4.709 3.791 8.5 8.5 8.5h161c4.709 0 8.5-3.791 8.5-8.5V107.05l-64.447-64.055z" fill="#6f6f6f"/><path d="M680 108v152c0 4.432-3.568 8-8 8H512c-4.432 0-8-3.568-8-8V52c0-4.432 3.568-8 8-8h104" fill="#ececec"/><path d="M680 114h-57c-4.432 0-8-3.568-8-8V44h1l64 64z" fill="#6f6f6f" fill-opacity=".502"/><path d="M680 108h-56c-4.432 0-8-3.568-8-8V44" fill="#fafafa"/><rect x="536" y="227.5" width="72" height="8" ry="3.646" fill="#474341" fill-opacity=".69"/><rect x="536" y="203.5" width="112" height="8" ry="3.646" fill="#474341" fill-opacity=".69"/><rect x="536" y="179.5" width="112" height="8" ry="3.646" fill="#474341" fill-opacity=".69"/><rect x="536" y="155.5" width="112" height="8" ry="3.646" fill="#474341" fill-opacity=".69"/><rect transform="rotate(45)" x="560.5" y="-253.03" width="33" height="15" ry="0" fill="#a27100"/><rect transform="rotate(45)" x="560.5" y="-406.53" width="33" height="168.5" ry="8.5" fill="#a27100"/><path d="M564.65 228.02v23.335h23.335z" fill="#a27100"/><rect transform="rotate(45)" x="561" y="-406.03" width="32" height="16" ry="8" fill="#ff8989"/><rect transform="rotate(45)" x="561" y="-390.03" width="32" height="24" ry="0" fill="#d4d1ca"/><path fill="#ffce51" d="m661.166 143.521 11.314 11.314-90.51 90.51-11.314-11.314z"/><path fill="#fffa7d" d="m655.51 137.865 5.656 5.656-90.51 90.51-5.656-5.657z"/><path fill="#d1a023" d="m672.48 154.835 5.657 5.657-90.51 90.51-5.657-5.657z"/><path d="M565 228.37v22.627h22.627z" fill="#f5f2e3"/><path d="m565 245.34 5.657 5.657H565z" fill="#3c3c3c"/><rect transform="rotate(45)" x="561" y="-398.03" width="32" height="8" ry="0" fill="#ff8989"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <!-- Chassi do módulo de código espacial -->
+    <linearGradient id="edit-chassis" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#082f49"/>
+    </linearGradient>
+
+    <!-- Superfície interna de edição / tela escura -->
+    <linearGradient id="edit-screen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#060e1c"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Caneta óptica / Stylus espacial em titânio -->
+    <linearGradient id="stylus-body" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <!-- Chassi principal do tablet de dados (rx 28) -->
+  <rect x="32" y="34" width="192" height="188" rx="28" ry="28"
+        fill="url(#edit-chassis)"
+        filter="url(#shadow)"/>
+
+  <!-- Painel interno escuro de edição (rx 20) -->
+  <rect x="46" y="48" width="134" height="160" rx="20" ry="20"
+        fill="url(#edit-screen)"/>
+
+  <!-- Linhas de código / sintaxe retrô-espacial iluminada -->
+  <!-- Linha 1: Palavra-chave âmbar + Identificador ciano -->
+  <rect x="62" y="68" width="36" height="6" rx="3" fill="#f59e0b"/>
+  <rect x="104" y="68" width="52" height="6" rx="3" fill="#38bdf8"/>
+
+  <!-- Linha 2 (Indentada): Função mint + argumento branco -->
+  <rect x="74" y="86" width="44" height="6" rx="3" fill="#10b981"/>
+  <rect x="124" y="86" width="32" height="6" rx="3" fill="#e0f2fe" opacity="0.85"/>
+
+  <!-- Linha 3 (Indentada): String literal solar -->
+  <rect x="74" y="104" width="60" height="6" rx="3" fill="#fb923c"/>
+
+  <!-- Linha 4: Fechamento + Cursor cósmico piscando -->
+  <rect x="62" y="122" width="20" height="6" rx="3" fill="#38bdf8" opacity="0.9"/>
+  <rect x="88" y="120" width="4" height="10" rx="2" fill="#ffffff"/>
+
+  <!-- Linha 5: Código secundário suave -->
+  <rect x="62" y="140" width="48" height="5" rx="2.5" fill="#0284c7" opacity="0.5"/>
+
+  <!-- Faixas retrô-espaciais no painel inferior (Mission Stripes) -->
+  <rect x="62" y="184" width="44" height="5" rx="2.5" fill="#f59e0b"/>
+  <rect x="62" y="192" width="32" height="5" rx="2.5" fill="#38bdf8"/>
+
+  <!-- Compartimento acoplado da Stylus óptica (à direita) -->
+  <rect x="188" y="58" width="22" height="140" rx="11" ry="11" fill="#0b1329" fill-opacity="0.4"/>
+  <!-- Corpo da Stylus -->
+  <rect x="193" y="66" width="12" height="114" rx="6" ry="6" fill="url(#stylus-body)"/>
+  <!-- Ponta e LED óptico da caneta -->
+  <circle cx="199" cy="74" r="3.5" fill="#38bdf8"/>
+  <circle cx="199" cy="74" r="1.5" fill="#ffffff"/>
+  <path d="M 193 166 L 199 178 L 205 166 Z" fill="#f59e0b"/>
+
+  <!-- Brilho sutil contínuo na curvatura superior -->
+  <path d="M 58 40 L 198 40"
+        stroke="#38bdf8" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+</svg>
