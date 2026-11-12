@@ -1,47 +1,49 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
   <defs>
-    <!-- Chassi do monitor moderno -->
-    <linearGradient id="term-chassis" x1="0%" y1="0%" x2="0%" y2="100%">
+    <!-- Moldura externa da janela moderna (Azul profundo) -->
+    <linearGradient id="term-frame" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#0284c7"/>
-      <stop offset="100%" stop-color="#082f49"/>
+      <stop offset="100%" stop-color="#075985"/>
     </linearGradient>
 
-    <!-- Tela do terminal (Preto espacial profundo) -->
-    <linearGradient id="term-screen" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#050d1a"/>
+    <!-- Fundo escuro profundo da tela do terminal -->
+    <linearGradient id="term-dark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#060e1c"/>
       <stop offset="100%" stop-color="#0b172a"/>
     </linearGradient>
 
-    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-opacity="0.25"/>
+    <!-- Sombra suave e difusa de janela flutuante -->
+    <filter id="shadow-window" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-opacity="0.24"/>
     </filter>
   </defs>
 
-  <!-- Chassi principal com cantos bem arredondados (rx 28) -->
-  <rect x="28" y="38" width="200" height="180" rx="28" ry="28"
-        fill="url(#term-chassis)"
-        filter="url(#shadow)"/>
+  <!-- Janela de terminal flutuante com cantos bem arredondados (rx 28) -->
+  <rect x="34" y="34" width="188" height="188" rx="28" ry="28"
+        fill="url(#term-frame)"
+        filter="url(#shadow-window)"/>
 
-  <!-- Tela interna arredondada -->
-  <rect x="46" y="56" width="164" height="144" rx="20" ry="20"
-        fill="url(#term-screen)"/>
+  <!-- Aba superior ativa estilo COSMIC Term -->
+  <rect x="48" y="44" width="76" height="22" rx="7" ry="7"
+        fill="#0b172a" fill-opacity="0.55"/>
+  <circle cx="59" cy="55" r="3" fill="#38bdf8"/>
+  <rect x="67" y="53" width="46" height="4" rx="2" fill="#e0f2fe" opacity="0.85"/>
 
-  <!-- Pontos sutis de controle de janela no topo da tela -->
-  <circle cx="64" cy="74" r="3.5" fill="#ef4444" opacity="0.75"/>
-  <circle cx="76" cy="74" r="3.5" fill="#f59e0b" opacity="0.75"/>
-  <circle cx="88" cy="74" r="3.5" fill="#10b981" opacity="0.75"/>
+  <!-- Área interna principal do terminal (rx 20) -->
+  <rect x="46" y="74" width="164" height="136" rx="20" ry="20"
+        fill="url(#term-dark)"/>
 
-  <!-- Prompt em ciano luminoso (> _) -->
-  <path d="M 68 108 L 88 122 L 68 136"
+  <!-- Prompt cósmico em ciano luminoso (> _) -->
+  <path d="M 66 108 L 86 122 L 66 136"
         stroke="#38bdf8" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
   <!-- Cursor em bloco arredondado -->
-  <rect x="100" y="112" width="12" height="20" rx="3" fill="#38bdf8"/>
+  <rect x="98" y="112" width="12" height="20" rx="3" fill="#38bdf8"/>
 
-  <!-- Linha secundária de comando/código suave -->
-  <rect x="68" y="156" width="60" height="5" rx="2.5" fill="#0284c7" opacity="0.6"/>
-  <rect x="136" y="156" width="44" height="5" rx="2.5" fill="#64748b" opacity="0.4"/>
+  <!-- Linha secundária de comando/saída limpa -->
+  <rect x="66" y="156" width="72" height="5" rx="2.5" fill="#e0f2fe" opacity="0.85"/>
+  <rect x="146" y="156" width="48" height="5" rx="2.5" fill="#64748b" opacity="0.45"/>
 
-  <!-- Brilho sutil contínuo na curvatura superior do chassi -->
-  <path d="M 56 44 L 200 44"
-        stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.35"/>
+  <!-- Friso de luz contínuo na curvatura superior da janela -->
+  <path d="M 60 40 L 196 40"
+        stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/>
 </svg>
