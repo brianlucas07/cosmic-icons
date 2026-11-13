@@ -8,12 +8,10 @@ A modern retro-futuristic squircle icon theme (`256×256` full-color apps/places
 
 ## Quick Install (One-Command Setup)
 
-Make sure `just` is installed on your distribution (`sudo pacman -S just`, `sudo apt install just`, or `sudo dnf install just`).
-
-Then run the following single command in your terminal:
+Run the following single command in your terminal:
 
 ```bash
-git clone https://github.com/brianlucas07/cosmic-icons.git /tmp/cosmic-brian-theme && cd /tmp/cosmic-brian-theme && ./install.sh && rm -rf /tmp/cosmic-brian-theme
+rm -rf /tmp/cosmic-brian-theme && git clone https://github.com/brianlucas07/cosmic-icons.git /tmp/cosmic-brian-theme && /tmp/cosmic-brian-theme/install.sh && rm -rf /tmp/cosmic-brian-theme
 ```
 
 > **Note:** `./install.sh` automatically activates `COSMIC-Brian-Theme` via `gsettings` (for **GNOME / GTK** desktops) and, on **COSMIC Desktop**, sets `COSMIC-Brian-Theme` as your active icon theme and briefly restarts `cosmic-panel` (top panel and dock), `cosmic-app-library`, `cosmic-launcher`, and `cosmic-files` so the in-memory SVG icon cache refreshes immediately without needing to log out.
