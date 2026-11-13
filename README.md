@@ -6,11 +6,28 @@ A modern retro-futuristic squircle icon theme (`256×256` full-color apps/places
 
 ---
 
-## Third-Party Applications Design Guideline
+## Third-Party Applications Design System Specification
 
-For third-party software (such as developer tools, IDEs, browsers, and media suites), the theme follows an authentic native-first philosophy:
-- **Full Native Silhouette & Palettes:** Third-party applications retain their authentic full-scale silhouettes, brand geometries, and official color palettes (e.g., JetBrains IDEs, Android Studio, VS Code, Firefox) rather than being confined inside a uniform neutral chassis, preserving instant recognition and muscle memory.
-- **Cosmic & Retro-Futuristic Details:** The theme's signature identity is infused through meticulous finishing details: continuous top specular highlights, precision technical bevels, subtle blueprint/stellar line accents, and layered ambient depth.
+For third-party software (such as developer tools, IDEs, browsers, and media suites), the theme enforces a strict **Native-First with Cosmic Detailing** standard.
+
+### 1. The Golden Rule: Never Cage Brand Silhouettes
+- **Full-Scale Presence:** Third-party applications must **never** be shrunken down into generic dark-gray/neutral tiles or uniform square containers. The application's native geometry, official silhouette, and trademark facets occupy the primary `256×256` canvas directly.
+- **Strict Brand Fidelity:** Official brand colors, corporate gradients, and proprietary logotype typography (e.g., JetBrains official "WS", "RD", "RR" lettering, Android Studio blueprint geometry, Firefox flame arcs) must be preserved with exact vector fidelity to ensure zero friction and preserve user muscle memory.
+
+### 2. The 4 Cosmic & Retro-Futuristic Detailing Layers
+Cosmic integration is achieved through high-precision finishing details rather than altering the core brand shape:
+1. **Continuous Top Specular Curvature Highlight:** A smooth curved or horizontal stroke along the upper contour (`stroke="#ffffff"` with `stroke-width="2.5"` to `3` and `opacity="0.45"` to `0.55"`), simulating the reflective curvature of optical aerospace glass.
+2. **Aerospace Micro-Borders & Bevels:** Subtle, crisp outer perimeter strokes (`stroke="#ffffff"` with `stroke-width="1"` to `1.2"` and `stroke-opacity="0.25"`) and light bevels on vertex meeting edges that give tactile presence.
+3. **Layered Ambient Depth & Brand Glow:** Dual-stage drop shadows using SVG `<feDropShadow>`: a deep occlusion shadow (`flood-color="#050811"` with high deviation) layered with a soft ambient neon glow tinted in the application's primary brand color.
+4. **Technical & Blueprint Precision Accents:** Subtle scientific accents where applicable—such as concentric measurement rings, hairline grid lines, and glowing terminal/antenna beacons.
+
+### 3. Symbolic Icon Standard (`-symbolic`)
+- Each third-party icon is accompanied by a companion `-symbolic.svg` in `16×16` (`viewBox="0 0 16 16"`).
+- Uses simplified, high-contrast monochrome silhouettes with `fill="currentColor"` for dynamic dark/light panel adaptation.
+
+### 4. XDG Resolution & Dynamic Toolbox Integration
+- Native icons are registered under both standard Freedesktop names and full reverse-DNS App IDs (`<app>.svg` and `org.<vendor>.<app>.svg`).
+- The `./install.sh` script automatically detects dynamically generated desktop launchers (such as JetBrains Toolbox UUID entries in `~/.local/share/applications/`) and generates symlinks, ensuring instant theme coverage regardless of how the user installs the application.
 
 ---
 

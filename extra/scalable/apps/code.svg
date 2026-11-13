@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <!-- Gradiente da Aba Traseira Superior (Azul Escuro Profundo a Ciano) -->
+    <linearGradient id="vscode-back" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#005a9e"/>
+      <stop offset="50%" stop-color="#007acc"/>
+      <stop offset="100%" stop-color="#0066b8"/>
+    </linearGradient>
+
+    <!-- Gradiente da Aba Frontal Transversal (Azul Elétrico Oficial) -->
+    <linearGradient id="vscode-front" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#007acc"/>
+      <stop offset="60%" stop-color="#1f8ad2"/>
+      <stop offset="100%" stop-color="#0098ff"/>
+    </linearGradient>
+
+    <!-- Gradiente da Coluna Vertical Direita (Azul Celeste Iluminado) -->
+    <linearGradient id="vscode-spine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="35%" stop-color="#1eacf8"/>
+      <stop offset="100%" stop-color="#007acc"/>
+    </linearGradient>
+
+    <!-- Sombras em Camadas: Profundidade e Glow Neon Azul do VS Code -->
+    <filter id="vscode-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#020914" flood-opacity="0.55"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="#007acc" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#vscode-shadow)">
+    <!-- Geometria Vetorial Nativa da Fita Origami do VS Code (Escalada 4x a partir da Matriz Oficial) -->
+    <g transform="scale(4)">
+      <!-- 1. Aba Inferior Traseira -->
+      <path d="M 58.019 9.932 L 46.488 4.348 C 45.153 3.702 43.558 3.974 42.511 5.028 L 4.761 39.025 C 3.746 39.956 3.747 41.564 4.764 42.494 L 7.847 45.313 C 8.678 46.073 9.930 46.129 10.825 45.446 L 56.284 11.381 C 57.809 10.217 60 11.311 60 13.237 V 13.102 C 60 11.751 59.230 10.519 58.019 9.932 Z"
+            fill="url(#vscode-back)"/>
+
+      <!-- 2. Aba Frontal Diagonal Transversal -->
+      <path d="M 58.019 54.068 L 46.488 59.652 C 45.153 60.298 43.558 60.026 42.511 58.972 L 4.761 22.913 C 3.746 21.982 3.747 20.374 4.764 19.444 L 7.847 16.625 C 8.678 15.865 9.930 15.809 10.825 16.492 L 56.284 52.619 C 57.809 53.783 60 52.689 60 50.763 V 50.898 C 60 52.249 59.230 53.481 58.019 54.068 Z"
+            fill="url(#vscode-front)"/>
+
+      <!-- 3. Coluna Vertical Direita (Lâmina Principal) -->
+      <path d="M 46.489 59.653 C 45.154 60.299 43.559 60.026 42.511 58.972 C 43.802 60.270 46.009 59.351 46.009 57.515 V 6.485 C 46.009 4.649 43.802 3.730 42.511 5.028 C 43.559 3.974 45.154 3.701 46.489 4.347 L 58.018 9.924 C 59.230 10.510 60 11.742 60 13.094 V 50.906 C 60 52.258 59.230 53.490 58.018 54.076 Z"
+            fill="url(#vscode-spine)"/>
+
+      <!-- 4. Friso Especular Ancorado Parametricamente na Crista Superior da Fita -->
+      <path d="M 4.761 39.025 L 42.511 5.028 C 43.558 3.974 45.153 3.702 46.488 4.348 L 58.019 9.932"
+            fill="none" stroke="#ffffff" stroke-width="0.75" stroke-linecap="round" stroke-opacity="0.6"/>
+
+      <!-- 5. Friso de Luz no Contorno Superior da Lâmina Direita -->
+      <path d="M 46.489 4.347 L 58.018 9.924 C 59.230 10.510 60 11.742 60 13.094"
+            fill="none" stroke="#ffffff" stroke-width="0.75" stroke-linecap="round" stroke-opacity="0.45"/>
+
+      <!-- 6. Micro-Bisel Metálico Interno da Dobra Vertical da Fita -->
+      <line x1="46.009" y1="6.485" x2="46.009" y2="57.515"
+            stroke="#ffffff" stroke-width="0.35" stroke-opacity="0.3"/>
+    </g>
+  </g>
+</svg>
