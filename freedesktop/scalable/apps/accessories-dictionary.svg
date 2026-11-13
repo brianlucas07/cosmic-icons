@@ -1,1 +1,41 @@
-<svg version="1.0" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-464 -28)"><rect x="504" y="45" width="176" height="215" ry="8" fill="#560c00"/><rect x="505" y="46" width="174" height="213" ry="7.5" fill="#dedede"/><rect x="504" y="44" width="174" height="202" ry="8" fill="#560c00"/><rect x="505" y="45" width="172" height="200" ry="7.5" fill="#f15d22"/><path d="M512.5 45a7.484 7.484 0 0 0-7.5 7.5v199c0 4.155 3.348 7.646 7.5 7.5h3.5V45z" fill="#350700"/><path d="M564 122c-8.864 0-16 7.136-16 16v32h8v-16h16v16h8v-32c0-8.864-7.136-16-16-16zm0 8c4.432 0 8 3.568 8 8v8h-16v-8c0-4.432 3.568-8 8-8z" fill-opacity=".196"/><path d="M604 122v8h20l-20 32v8h32v-8h-20l20-32v-8h-8z" fill-opacity=".196"/><path fill-opacity=".196" d="M584 146h20v8h-20z"/><path d="M564 121c-8.864 0-16 7.136-16 16v32h8v-16h16v16h8v-32c0-8.864-7.136-16-16-16zm0 8c4.432 0 8 3.568 8 8v8h-16v-8c0-4.432 3.568-8 8-8z" fill="#ededed"/><path d="M604 121v8h20l-20 32v8h32v-8h-20l20-32v-8h-8z" fill="#ededed"/><path fill="#ededed" d="M584 145h20v8h-20z"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <!-- Capa do Dicionário em Azul Cósmico Profundo -->
+    <linearGradient id="book-cover" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#075985"/>
+    </linearGradient>
+
+    <!-- Lombada lateral em Titânio Escuro -->
+    <linearGradient id="book-spine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-opacity="0.26"/>
+    </filter>
+  </defs>
+
+  <!-- Capa Principal Squircle (rx 28) -->
+  <rect x="44" y="32" width="168" height="192" rx="28" ry="28"
+        fill="url(#book-cover)"
+        filter="url(#shadow)"/>
+
+  <!-- Lombada Esquerda -->
+  <path d="M 72 32 H 84 V 224 H 72 C 56.5 224 44 211.5 44 196 V 60 C 44 44.5 56.5 32 72 32 Z"
+        fill="url(#book-spine)"/>
+
+  <!-- Friso de luz especular contínuo na curvatura superior -->
+  <path d="M 88 38 L 186 38"
+        stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/>
+
+  <!-- Marcador inferior em Âmbar Solar -->
+  <path d="M 164 204 H 184 V 234 L 174 225 L 164 234 Z" fill="#fbbf24"/>
+
+  <!-- Glifo Tipográfico 'A-Z' na Capa -->
+  <path d="M 104 156 L 124 100 L 144 156 M 111 140 H 137"
+        fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 156 116 H 184 L 156 156 H 184"
+        fill="none" stroke="#7dd3fc" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

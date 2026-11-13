@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <!-- Capa / Prancheta do Visualizador de Documentos (Azul cósmico profundo) -->
+    <linearGradient id="doc-back" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#075985"/>
+    </linearGradient>
+
+    <!-- Folha interna de leitura -->
+    <linearGradient id="doc-sheet" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+
+    <!-- Marcador de página (Bookmark) em Âmbar Solar -->
+    <linearGradient id="bookmark-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+
+    <!-- Bloco gráfico em ciano vibrante -->
+    <linearGradient id="hero-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+
+    <!-- Sombra principal -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-opacity="0.26"/>
+    </filter>
+
+    <filter id="bm-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <!-- Prancheta Base Squircle (rx 28) -->
+  <rect x="42" y="32" width="172" height="192" rx="28" ry="28"
+        fill="url(#doc-back)"
+        filter="url(#shadow)"/>
+
+  <!-- Friso de luz especular contínuo na curvatura superior -->
+  <path d="M 68 38 L 188 38"
+        stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/>
+
+  <!-- Folha Interna de Documento -->
+  <rect x="56" y="46" width="144" height="164" rx="18" ry="18"
+        fill="url(#doc-sheet)"/>
+
+  <!-- Marcador de Página (Bookmark) no Topo Direito -->
+  <path d="M 156 46 H 178 V 98 L 167 88 L 156 98 Z"
+        fill="url(#bookmark-grad)"
+        filter="url(#bm-shadow)"/>
+
+  <!-- Cabeçalho Visual / Artigo no Documento -->
+  <rect x="74" y="70" width="66" height="42" rx="8" fill="url(#hero-cyan)"/>
+  <circle cx="92" cy="86" r="6" fill="#ffffff" opacity="0.85"/>
+  <path d="M 78 106 L 98 92 L 114 104 L 126 94 L 136 106 Z" fill="#e0f2fe" opacity="0.9"/>
+
+  <!-- Linhas Diagramadas do Documento -->
+  <rect x="74" y="128" width="108" height="6" rx="3" fill="#94a3b8"/>
+  <rect x="74" y="144" width="108" height="6" rx="3" fill="#cbd5e1"/>
+  <rect x="74" y="160" width="92" height="6" rx="3" fill="#cbd5e1"/>
+  <rect x="74" y="176" width="64" height="6" rx="3" fill="#94a3b8"/>
+</svg>

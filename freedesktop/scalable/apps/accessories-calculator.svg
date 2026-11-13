@@ -1,1 +1,90 @@
-<svg version="1.0" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-464 -28)"><rect x="488" y="52" width="208" height="212" ry="8" fill="#dedede"/><path d="M496.004 52c-4.432 0-8 3.568-8 8v196c0 4.432 3.568 8 8 8h192c4.432 0 8-3.568 8-8V60c0-4.432-3.568-8-8-8zm.5 1h191c4.155 0 7.5 3.345 7.5 7.5v191c0 4.155-3.345 7.5-7.5 7.5h-191a7.484 7.484 0 0 1-7.5-7.5v-191c0-4.155 3.345-7.5 7.5-7.5z" fill-opacity=".502"/><rect x="501" y="65.75" width="86" height="86" ry="7" fill-opacity=".5"/><rect x="597" y="65.75" width="86" height="86" ry="7" fill-opacity=".5"/><rect x="501" y="162.25" width="86" height="86" ry="7" fill-opacity=".5"/><rect x="597" y="159.75" width="86" height="88" ry="7" fill-opacity=".5"/><rect x="501" y="63.75" width="86" height="86" ry="7" fill="#aaa"/><rect x="597" y="63.75" width="86" height="86" ry="7" fill="#aaa"/><rect x="501" y="159.75" width="86" height="86" ry="7" fill="#aaa"/><rect x="597" y="159.75" width="86" height="86" ry="7" fill="#73c48f"/><path d="M548 79v26h26v8h-26v26h-8v-26h-26v-8h26V79z" fill-opacity=".196"/><path d="M667 87.5 645.5 109l21.5 21.5-5.5 5.5-21.5-21.5-21.5 21.5-5.5-5.5 21.5-21.5L613 87.5l5.5-5.5 21.5 21.5L661.5 82z" fill-opacity=".196"/><path d="M538 182h12v11h-12zm0 35h12v11h-12zm-24-16h60v8h-60z" fill-opacity=".196"/><path d="M612 191h56v8h-56zm0 20h56v8h-56z" fill-opacity=".196"/><path d="M548 78v26h26v8h-26v26h-8v-26h-26v-8h26V78z" fill="#fff"/><path d="M667 86.5 645.5 108l21.5 21.5-5.5 5.5-21.5-21.5-21.5 21.5-5.5-5.5 21.5-21.5L613 86.5l5.5-5.5 21.5 21.5L661.5 81z" fill="#fff"/><path d="M538 181h12v11h-12zm0 35h12v11h-12zm-24-16h60v8h-60z" fill="#fff"/><path d="M612 190h56v8h-56zm0 20h56v8h-56z" fill="#fbfbfb"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <!-- Chassi em titânio escuro espacial -->
+    <linearGradient id="chassis-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Visor LCD escuro de precisão -->
+    <linearGradient id="lcd-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#091526"/>
+      <stop offset="100%" stop-color="#050b14"/>
+    </linearGradient>
+
+    <!-- Teclas padrão em azul-ardósia metálico -->
+    <linearGradient id="key-dark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <!-- Tecla de operação em azul cósmico -->
+    <linearGradient id="key-cyan" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+
+    <!-- Tecla Igual (=) em Âmbar Solar vibrante -->
+    <linearGradient id="key-amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+
+    <!-- Sombra principal do chassi -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="7" stdDeviation="8" flood-opacity="0.3"/>
+    </filter>
+
+    <!-- Sombra das teclas -->
+    <filter id="key-shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#020617" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Chassi Base Squircle (rx 28) -->
+  <rect x="36" y="36" width="184" height="184" rx="28" ry="28"
+        fill="url(#chassis-grad)"
+        stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.3"
+        filter="url(#shadow)"/>
+
+  <!-- Friso de luz especular contínuo na curvatura superior -->
+  <path d="M 64 42 L 192 42"
+        stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.35"/>
+
+  <!-- Visor LCD Superior -->
+  <rect x="54" y="54" width="148" height="46" rx="14" ry="14"
+        fill="url(#lcd-grad)"
+        stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.32"/>
+
+  <!-- Indicadores numéricos estilizados no visor LCD -->
+  <rect x="70" y="74" width="26" height="6" rx="3" fill="#38bdf8" opacity="0.45"/>
+  <circle cx="152" cy="84" r="3" fill="#38bdf8"/>
+  <rect x="122" y="68" width="22" height="6" rx="3" fill="#38bdf8"/>
+  <rect x="122" y="80" width="22" height="6" rx="3" fill="#38bdf8"/>
+  <rect x="162" y="66" width="24" height="20" rx="5" fill="none" stroke="#7dd3fc" stroke-width="4.5"/>
+
+  <!-- Grade de Teclas Táteis (2x2) -->
+  <g filter="url(#key-shadow)">
+    <!-- Tecla Superior Esquerda (+) -->
+    <rect x="54" y="112" width="68" height="42" rx="12" fill="url(#key-dark)"/>
+    <path d="M 88 124 V 142 M 79 133 H 97"
+          stroke="#f8fafc" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Tecla Superior Direita (×) -->
+    <rect x="134" y="112" width="68" height="42" rx="12" fill="url(#key-cyan)"/>
+    <path d="M 161 126 L 175 140 M 175 126 L 161 140"
+          stroke="#e0f2fe" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Tecla Inferior Esquerda (− / ÷) -->
+    <rect x="54" y="164" width="68" height="42" rx="12" fill="url(#key-dark)"/>
+    <path d="M 78 185 H 98"
+          stroke="#38bdf8" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="88" cy="176" r="2.5" fill="#38bdf8"/>
+    <circle cx="88" cy="194" r="2.5" fill="#38bdf8"/>
+
+    <!-- Tecla Inferior Direita (=) em Âmbar Solar -->
+    <rect x="134" y="164" width="68" height="42" rx="12" fill="url(#key-amber)"/>
+    <path d="M 157 180 H 179 M 157 190 H 179"
+          stroke="#ffffff" stroke-width="4.2" stroke-linecap="round"/>
+  </g>
+</svg>

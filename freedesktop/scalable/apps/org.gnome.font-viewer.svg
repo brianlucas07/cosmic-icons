@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <!-- Chassi em titânio escuro espacial -->
+    <linearGradient id="chassis-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Glifo tipográfico em ciano elétrico -->
+    <linearGradient id="font-cyan" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+
+    <!-- Sombra principal do chassi -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="7" stdDeviation="8" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Chassi Base Squircle (rx 28) -->
+  <rect x="36" y="36" width="184" height="184" rx="28" ry="28"
+        fill="url(#chassis-grad)"
+        stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.3"
+        filter="url(#shadow)"/>
+
+  <!-- Friso de luz especular contínuo na curvatura superior -->
+  <path d="M 64 42 L 192 42"
+        stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.35"/>
+
+  <!-- Guias tipográficas sutis de baseline e cap-height -->
+  <line x1="54" y1="84" x2="202" y2="84" stroke="#38bdf8" stroke-width="1" stroke-dasharray="4 4" opacity="0.28"/>
+  <line x1="54" y1="176" x2="202" y2="176" stroke="#fbbf24" stroke-width="1.5" opacity="0.45"/>
+
+  <!-- Letra 'A' Maiúscula em Branco Puro -->
+  <path d="M 68 174 L 100 88 L 132 174 M 79 148 H 121"
+        fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Letra 'a' Minúscula em Ciano Elétrico -->
+  <path d="M 154 126 C 154 116 162 112 174 112 C 186 112 194 118 194 130 V 174 M 194 142 H 172 C 158 142 150 148 150 158 C 150 168 158 174 172 174 C 183 174 190 169 194 162"
+        fill="none" stroke="url(#font-cyan)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

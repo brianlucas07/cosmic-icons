@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <!-- Chassi em titânio escuro espacial -->
+    <linearGradient id="chassis-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Peça de Extensão em Ciano Vibrante a Azul Cósmico -->
+    <linearGradient id="puzzle-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="7" stdDeviation="8" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Chassi Base Squircle (rx 28) -->
+  <rect x="36" y="36" width="184" height="184" rx="28" ry="28"
+        fill="url(#chassis-grad)"
+        stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.3"
+        filter="url(#shadow)"/>
+
+  <!-- Friso de luz especular contínuo na curvatura superior -->
+  <path d="M 64 42 L 192 42"
+        stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.35"/>
+
+  <!-- Peça de Quebra-Cabeça / Módulo (GNOME Extensions) -->
+  <path d="M 88 84 H 114 C 114 70 138 70 138 84 H 164 C 171 84 176 89 176 96 V 122 C 190 122 190 146 176 146 V 172 C 176 179 171 184 164 184 H 88 C 81 184 76 179 76 172 V 146 C 90 146 90 122 76 122 V 96 C 76 89 81 84 88 84 Z"
+        fill="url(#puzzle-grad)"/>
+
+  <!-- Ponto LED Indicador de Módulo Ativo -->
+  <circle cx="126" cy="134" r="8" fill="#fbbf24"/>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <!-- Chassi em titânio escuro espacial -->
+    <linearGradient id="chassis-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Folha sendo digitalizada -->
+    <linearGradient id="doc-sheet" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+
+    <!-- Feixe óptico de varredura (Ciano + Âmbar) -->
+    <linearGradient id="scan-glow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.38"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.0"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="7" stdDeviation="8" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Chassi Base Squircle (rx 28) -->
+  <rect x="36" y="36" width="184" height="184" rx="28" ry="28"
+        fill="url(#chassis-grad)"
+        stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.3"
+        filter="url(#shadow)"/>
+
+  <!-- Friso de luz especular contínuo na curvatura superior -->
+  <path d="M 64 42 L 192 42"
+        stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.35"/>
+
+  <!-- Vidro escuro da mesa digitalizadora -->
+  <rect x="54" y="54" width="148" height="148" rx="18" fill="#091526"/>
+
+  <!-- Documento sobre o vidro -->
+  <rect x="74" y="68" width="108" height="120" rx="10" fill="url(#doc-sheet)"/>
+  <rect x="90" y="88" width="52" height="6" rx="3" fill="#94a3b8"/>
+  <rect x="90" y="102" width="76" height="6" rx="3" fill="#cbd5e1"/>
+  <rect x="90" y="146" width="68" height="6" rx="3" fill="#cbd5e1"/>
+  <rect x="90" y="160" width="48" height="6" rx="3" fill="#94a3b8"/>
+
+  <!-- Rastro luminoso do laser de digitalização -->
+  <rect x="54" y="124" width="148" height="44" fill="url(#scan-glow)"/>
+
+  <!-- Barra de Feixe Laser de Varredura -->
+  <line x1="48" y1="124" x2="208" y2="124" stroke="#38bdf8" stroke-width="5" stroke-linecap="round"/>
+  <line x1="60" y1="124" x2="196" y2="124" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+</svg>

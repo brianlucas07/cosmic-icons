@@ -1,1 +1,31 @@
-<svg version="1.0" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-464 -28)"><rect x="505" y="44" width="176" height="226" ry="8" fill="#1f285a"/><rect x="505" y="44" width="176" height="224" ry="8" fill="#3f51b5"/><rect x="505.5" y="44.5" width="175" height="223" ry="7.5" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-opacity=".314"/><path d="M578 204h20v24h-20zm20-13h-20c0-19.256 2.703-33.876 14.754-45.445 5.863-5.628 12.35-11.637 16.459-18.085 1.841-2.89 3-7.351 2.787-10.47-.889-13.057-12.147-18.21-23-18-12.89.25-25.468 7.466-35 14V94c11.703-6.974 25.441-10.058 38-10 21.407.092 40.405 13.416 40 33-.347 16.796-13.38 26.562-24.797 37.167C598.02 162.697 598 175.93 598 191z" fill="#fff"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <!-- Chassi em azul cósmico a ciano vibrante -->
+    <linearGradient id="help-body" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="7" stdDeviation="8" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <!-- Chassi Base Squircle (rx 28) -->
+  <rect x="36" y="36" width="184" height="184" rx="28" ry="28"
+        fill="url(#help-body)"
+        filter="url(#shadow)"/>
+
+  <!-- Friso de luz especular contínuo na curvatura superior -->
+  <path d="M 64 42 L 192 42"
+        stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/>
+
+  <!-- Círculo Interno de Suporte -->
+  <circle cx="128" cy="128" r="68" fill="#082f49" opacity="0.5"/>
+  <circle cx="128" cy="128" r="68" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.35"/>
+
+  <!-- Glifo de Interrogação (?) em Branco Puro + Ponto Âmbar Solar -->
+  <path d="M 104 102 C 104 86 115 76 130 76 C 145 76 156 86 156 100 C 156 112 147 118 136 124 C 130 128 128 133 128 142"
+        fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="128" cy="168" r="8" fill="#fbbf24"/>
+</svg>
