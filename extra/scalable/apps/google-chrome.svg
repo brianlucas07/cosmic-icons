@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <!-- Gradiente Oficial Vermelho Carmim do Chrome -->
+    <linearGradient id="chrome-red" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff5944"/>
+      <stop offset="60%" stop-color="#ea4335"/>
+      <stop offset="100%" stop-color="#c5221f"/>
+    </linearGradient>
+
+    <!-- Gradiente Oficial Verde Esmeralda do Chrome -->
+    <linearGradient id="chrome-green" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0f9d58"/>
+      <stop offset="60%" stop-color="#34a853"/>
+      <stop offset="100%" stop-color="#55c977"/>
+    </linearGradient>
+
+    <!-- Gradiente Oficial Amarelo Solar do Chrome -->
+    <linearGradient id="chrome-yellow" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffdf40"/>
+      <stop offset="60%" stop-color="#fbbc05"/>
+      <stop offset="100%" stop-color="#e37400"/>
+    </linearGradient>
+
+    <!-- Núcleo Azul Óptico Espacial -->
+    <radialGradient id="chrome-core" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#6ba5ff"/>
+      <stop offset="50%" stop-color="#4285f4"/>
+      <stop offset="100%" stop-color="#1a73e8"/>
+    </radialGradient>
+
+    <!-- Sombras em Camadas: Profundidade e Glow Neon Cósmico -->
+    <filter id="chrome-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#050811" flood-opacity="0.55"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="#4285f4" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#chrome-shadow)">
+    <!-- Geometria Vetorial Nativa do Catavento Tricolor do Google Chrome (Escala 4x) -->
+    <g transform="scale(4)">
+      <!-- 1. Segmento Verde Esmeralda (Inferior Esquerdo) -->
+      <path d="M 8.7 16.504 C 8.218 17.236 7.773 18.02 7.321 18.797 A 28 28 0 0 0 4.001 32 A 28 28 0 0 0 32.001 60 A 28 28 0 0 0 32.431 59.984 L 45.689 37.937 C 44.627 39.667 40.202 41.882 38.314 42.972 C 32.272 46.46 24.599 44.206 21.111 38.163 L 8.701 16.503 Z"
+            fill="url(#chrome-green)"/>
+
+      <!-- 2. Segmento Vermelho Carmim (Superior) -->
+      <path d="M 19.145 37.731 L 7.766 18.02 C 11.864 10.926 18.414 6.714 24.512 5.02 C 27.31 4.248 29.502 4.059 32 4 C 35.325 4 46.87 4.822 54.688 15.649 C 55.233 16.407 55.74 17.192 56.207 18 H 32 C 29.331 18.299 27.811 19.706 26.942 21.711 L 36.446 38.176 L 24.887 43.117 Z"
+            fill="url(#chrome-red)"/>
+
+      <!-- 3. Segmento Amarelo Âmbar (Direito) -->
+      <path d="M 43.375 40.281 L 32 59.984 C 32.61 59.986 33.383 59.949 34.055 59.922 C 35.816 59.75 36.688 59.601 36.86 59.57 C 50.241 57.212 59.998 45.587 60 32 C 59.987 27.081 58.679 22.253 56.207 18 H 32.032 C 32.001 18 36.476 19.996 38.364 21.086 C 43.188 23.872 43.692 33.821 43.703 37.848 L 44.512 38.317 Z"
+            fill="url(#chrome-yellow)"/>
+
+      <!-- 4. Micro-Biséis Metálicos nas Junções dos 3 Segmentos -->
+      <line x1="19.145" y1="37.731" x2="7.766" y2="18.02" stroke="#ffffff" stroke-width="0.35" stroke-opacity="0.35"/>
+      <line x1="45.689" y1="37.937" x2="32.431" y2="59.984" stroke="#ffffff" stroke-width="0.35" stroke-opacity="0.35"/>
+      <line x1="56.207" y1="18" x2="32" y2="18" stroke="#ffffff" stroke-width="0.35" stroke-opacity="0.35"/>
+
+      <!-- 5. Anel Branco Central de Isolamento -->
+      <circle cx="32" cy="32" r="14" fill="#ffffff"/>
+
+      <!-- 6. Núcleo Azul Óptico Espacial do Chrome -->
+      <circle cx="32" cy="32" r="11" fill="url(#chrome-core)"/>
+
+      <!-- 7. Friso de Luz Especular Contínuo no Arco Superior do Disco -->
+      <path d="M 12 18 A 28 28 0 0 1 52 18"
+            fill="none" stroke="#ffffff" stroke-width="0.75" stroke-linecap="round" stroke-opacity="0.6"/>
+
+      <!-- 8. Glint de Vidro Óptico na Lente Central Azul -->
+      <path d="M 26 26 A 8 8 0 0 1 38 26"
+            fill="none" stroke="#ffffff" stroke-width="0.5" stroke-linecap="round" opacity="0.65"/>
+    </g>
+  </g>
+</svg>
