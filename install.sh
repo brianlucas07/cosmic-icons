@@ -36,11 +36,33 @@ EOF
     systemctl --user enable --now cosmic-brian-accent.path 2>/dev/null || true
 }
 
+link_jetbrains_toolbox_icons() {
+    local apps_dir="$THEME_DIR/scalable/apps"
+    [ -d "$apps_dir" ] || return 0
+    for desktop in "$HOME/.local/share/applications"/jetbrains-*.desktop; do
+        [ -f "$desktop" ] || continue
+        local icon_name
+        icon_name="$(grep -m1 '^Icon=' "$desktop" | cut -d= -f2-)"
+        [ -n "$icon_name" ] || continue
+        local target=""
+        case "$icon_name" in
+            *studio*)    target="android-studio.svg" ;;
+            *webstorm*)  target="webstorm.svg" ;;
+            *rider*)     target="rider.svg" ;;
+            *rustrover*) target="rustrover.svg" ;;
+        esac
+        if [ -n "$target" ] && [ "$icon_name.svg" != "$target" ]; then
+            ln -sf "$target" "$apps_dir/$icon_name.svg" 2>/dev/null || true
+        fi
+    done
+}
+
 echo "Installing COSMIC Brian Theme to $THEME_DIR..."
 rm -rf "$THEME_DIR"
 mkdir -p "$THEME_DIR"
 cp -r "$SCRIPT_DIR/freedesktop/scalable" "$THEME_DIR/"
 cp -r "$SCRIPT_DIR/extra/scalable" "$THEME_DIR/"
+link_jetbrains_toolbox_icons
 install -Dm0644 "$SCRIPT_DIR/index.theme" "$THEME_DIR/index.theme"
 install -Dm0755 "$SCRIPT_DIR/sync-accent.sh" "$THEME_DIR/sync-accent.sh"
 "$THEME_DIR/sync-accent.sh" --no-reload

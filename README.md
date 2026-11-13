@@ -6,6 +6,14 @@ A modern retro-futuristic squircle icon theme (`256×256` full-color apps/places
 
 ---
 
+## Third-Party Applications Design Guideline
+
+For third-party software (such as developer tools, IDEs, browsers, and media suites), the theme follows an authentic native-first philosophy:
+- **Full Native Silhouette & Palettes:** Third-party applications retain their authentic full-scale silhouettes, brand geometries, and official color palettes (e.g., JetBrains IDEs, Android Studio, VS Code, Firefox) rather than being confined inside a uniform neutral chassis, preserving instant recognition and muscle memory.
+- **Cosmic & Retro-Futuristic Details:** The theme's signature identity is infused through meticulous finishing details: continuous top specular highlights, precision technical bevels, subtle blueprint/stellar line accents, and layered ambient depth.
+
+---
+
 ## Quick Install (One-Command Setup)
 
 Run the following single command in your terminal:

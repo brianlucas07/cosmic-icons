@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <!-- Recorte do Chassi Squircle Nativo JetBrains -->
+    <clipPath id="squircle-clip">
+      <rect x="28" y="28" width="200" height="200" rx="44" ry="44"/>
+    </clipPath>
+
+    <!-- Placa Central com Gradiente Espacial Profundo -->
+    <linearGradient id="center-tile" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a2e3d"/>
+      <stop offset="100%" stop-color="#141720"/>
+    </linearGradient>
+
+    <!-- Sombras em Camadas: Profundidade e Glow Carmine do Rider -->
+    <filter id="rider-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#050811" flood-opacity="0.5"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#c72566" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#rider-shadow)">
+    <!-- Base Squircle Nativa com os 4 Quadrantes Oficiais do JetBrains Rider -->
+    <g clip-path="url(#squircle-clip)">
+      <!-- Quadrante Superior Esquerdo: Carmim Oficial -->
+      <rect x="28" y="28" width="100" height="100" fill="#c72566"/>
+      <!-- Quadrante Superior Direito: Violeta Oficial -->
+      <rect x="128" y="28" width="100" height="100" fill="#6655e4"/>
+      <!-- Quadrante Inferior Esquerdo: Laranja Solar Oficial -->
+      <rect x="28" y="128" width="100" height="100" fill="#ff8c2a"/>
+      <!-- Quadrante Inferior Direito: Carmim Oficial -->
+      <rect x="128" y="128" width="100" height="100" fill="#c72566"/>
+
+      <!-- Linhas de Junção / Transição Sutil entre Facetas -->
+      <line x1="128" y1="28" x2="128" y2="228" stroke="#ffffff" stroke-width="0.75" stroke-opacity="0.2"/>
+      <line x1="28" y1="128" x2="228" y2="128" stroke="#ffffff" stroke-width="0.75" stroke-opacity="0.2"/>
+    </g>
+
+    <!-- Borda Externa Sutil de Acabamento Metálico -->
+    <rect x="28" y="28" width="200" height="200" rx="44" ry="44"
+          fill="none" stroke="#ffffff" stroke-width="1.2" stroke-opacity="0.25"/>
+
+    <!-- Friso de Luz Especular Contínuo no Topo (Assinatura Cósmica) -->
+    <path d="M 64 36 L 192 36"
+          stroke="#ffffff" stroke-width="2.8" stroke-linecap="round" opacity="0.45"/>
+
+    <!-- Placa Central Preta / Terminal Oficial JetBrains -->
+    <rect x="68" y="68" width="120" height="120" rx="18"
+          fill="url(#center-tile)" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.35"/>
+
+    <!-- Monograma Oficial "RD" do Rider -->
+    <!-- Letra R -->
+    <path d="M 88 96 H 110 C 119 96 125 101 125 109 C 125 115 120 120 113 121 L 127 142 H 114 L 102 124 H 99 V 142 H 88 Z M 99 106 V 115 H 109 C 113 115 115 113 115 110.5 C 115 108 113 106 109 106 Z"
+          fill="#ffffff"/>
+
+    <!-- Letra D -->
+    <path d="M 134 96 H 151 C 162 96 170 104 170 119 C 170 134 162 142 151 142 H 134 Z M 145 106 V 132 H 151 C 156 132 159 127 159 119 C 159 111 156 106 151 106 Z"
+          fill="#ffffff"/>
+
+    <!-- Cursor Terminal JetBrains (_) -->
+    <rect x="88" y="156" width="34" height="5" rx="2" fill="#ffffff"/>
+  </g>
+</svg>

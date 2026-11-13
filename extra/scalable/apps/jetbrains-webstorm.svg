@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <!-- Recorte do Chassi Squircle Nativo JetBrains -->
+    <clipPath id="squircle-clip">
+      <rect x="28" y="28" width="200" height="200" rx="44" ry="44"/>
+    </clipPath>
+
+    <!-- Gradientes Oficiais das Facetas do WebStorm -->
+    <linearGradient id="ws-facet-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00cdd7"/>
+      <stop offset="50%" stop-color="#087cfa"/>
+      <stop offset="100%" stop-color="#003899"/>
+    </linearGradient>
+
+    <linearGradient id="ws-facet-deep" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#087cfa"/>
+      <stop offset="100%" stop-color="#001a4d"/>
+    </linearGradient>
+
+    <!-- Placa Central com Gradiente Espacial Profundo -->
+    <linearGradient id="center-tile" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a2e3d"/>
+      <stop offset="100%" stop-color="#141720"/>
+    </linearGradient>
+
+    <!-- Sombras em Camadas: Profundidade e Glow Ciano/Azul do WebStorm -->
+    <filter id="ws-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#050811" flood-opacity="0.5"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#00cdd7" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#ws-shadow)">
+    <!-- Base Squircle Nativa com a Geometria Angular Oficial do WebStorm -->
+    <g clip-path="url(#squircle-clip)">
+      <!-- Fundo Base Azul Cobalto Profundo -->
+      <rect x="28" y="28" width="200" height="200" fill="url(#ws-facet-deep)"/>
+
+      <!-- Faceta Amarela Solar Oficial -->
+      <polygon points="28,28 140,28 28,150" fill="#f0eb18"/>
+
+      <!-- Faceta Angular Ciano a Azul Vibrante -->
+      <polygon points="120,28 228,28 228,160 50,228 28,228 28,170" fill="url(#ws-facet-blue)"/>
+
+      <!-- Linhas de Junção entre Facetas -->
+      <line x1="28" y1="150" x2="140" y2="28" stroke="#ffffff" stroke-width="0.75" stroke-opacity="0.25"/>
+    </g>
+
+    <!-- Borda Externa Sutil de Acabamento Metálico -->
+    <rect x="28" y="28" width="200" height="200" rx="44" ry="44"
+          fill="none" stroke="#ffffff" stroke-width="1.2" stroke-opacity="0.25"/>
+
+    <!-- Friso de Luz Especular Contínuo no Topo (Assinatura Cósmica) -->
+    <path d="M 64 36 L 192 36"
+          stroke="#ffffff" stroke-width="2.8" stroke-linecap="round" opacity="0.45"/>
+
+    <!-- Placa Central Preta / Terminal Oficial JetBrains -->
+    <rect x="68" y="68" width="120" height="120" rx="18"
+          fill="url(#center-tile)" stroke="#00cdd7" stroke-width="1.2" stroke-opacity="0.35"/>
+
+    <!-- Monograma Oficial "WS" do WebStorm -->
+    <!-- Letra W -->
+    <path d="M 84 96 L 93 142 H 104 L 110 114 L 116 142 H 127 L 136 96 H 124 L 119 124 L 113 96 H 107 L 101 124 L 96 96 Z"
+          fill="#ffffff"/>
+
+    <!-- Letra S -->
+    <path d="M 168 105 C 165 99 159 96 153 96 C 145 96 140 100 140 106 C 140 113 144 116 153 118 C 164 121 170 126 170 133 C 170 141 162 144 153 144 C 144 144 136 139 135 132 H 145 C 146 135.5 149 137.5 153 137.5 C 157.5 137.5 160.5 135.5 160.5 132.5 C 160.5 129 156 127 149 125 C 139 122.5 130 118 130 108 C 130 100 137 96 151 96 C 161 96 167 101 168 105 Z"
+          fill="#ffffff"/>
+
+    <!-- Cursor Terminal JetBrains (_) -->
+    <rect x="84" y="156" width="34" height="5" rx="2" fill="#ffffff"/>
+  </g>
+</svg>
