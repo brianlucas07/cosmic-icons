@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 set -e
 
-if ! command -v just &> /dev/null; then
-    echo "Error: 'just' is required to build and install the icon theme."
-    exit 1
-fi
+THEME_DIR="$HOME/.local/share/icons/COSMIC-Brian-Theme"
 
-echo "Installing COSMIC Brian Theme to ~/.local/share/icons/COSMIC-Brian-Theme..."
-just prefix="$HOME/.local" install
-gtk-update-icon-cache -f -t "$HOME/.local/share/icons/COSMIC-Brian-Theme" 2>/dev/null || true
+echo "Installing COSMIC Brian Theme to $THEME_DIR..."
+mkdir -p "$THEME_DIR"
+cp -r ./freedesktop/scalable "$THEME_DIR/"
+cp -r ./extra/scalable "$THEME_DIR/"
+install -Dm0644 ./index.theme "$THEME_DIR/index.theme"
+gtk-update-icon-cache -f -t "$THEME_DIR" 2>/dev/null || true
 
 if command -v gsettings &> /dev/null; then
     echo "Setting GTK/GNOME icon theme to 'COSMIC-Brian-Theme'..."
