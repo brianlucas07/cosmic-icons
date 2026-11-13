@@ -1,13 +1,15 @@
 #!/usr/bin/env bash
 set -e
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 THEME_DIR="$HOME/.local/share/icons/COSMIC-Brian-Theme"
 
 echo "Installing COSMIC Brian Theme to $THEME_DIR..."
+rm -rf "$THEME_DIR"
 mkdir -p "$THEME_DIR"
-cp -r ./freedesktop/scalable "$THEME_DIR/"
-cp -r ./extra/scalable "$THEME_DIR/"
-install -Dm0644 ./index.theme "$THEME_DIR/index.theme"
+cp -r "$SCRIPT_DIR/freedesktop/scalable" "$THEME_DIR/"
+cp -r "$SCRIPT_DIR/extra/scalable" "$THEME_DIR/"
+install -Dm0644 "$SCRIPT_DIR/index.theme" "$THEME_DIR/index.theme"
 gtk-update-icon-cache -f -t "$THEME_DIR" 2>/dev/null || true
 
 if command -v gsettings &> /dev/null; then
