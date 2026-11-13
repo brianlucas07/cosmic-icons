@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <!-- Chassi em titânio escuro espacial -->
+    <linearGradient id="chassis-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Corpo do Microfone em Alumínio Aeroespacial -->
+    <linearGradient id="mic-body" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="35%" stop-color="#64748b"/>
+      <stop offset="70%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <!-- Barras do Espectro Sonoro -->
+    <linearGradient id="wave-grad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+
+    <!-- LED de Gravação Cósmico -->
+    <linearGradient id="rec-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f87171"/>
+      <stop offset="60%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#991b1b"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="7" stdDeviation="8" flood-opacity="0.3"/>
+    </filter>
+
+    <filter id="rec-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#ef4444" flood-opacity="0.75"/>
+    </filter>
+  </defs>
+
+  <!-- Chassi Base Squircle (rx 28) -->
+  <rect x="36" y="36" width="184" height="184" rx="28" ry="28"
+        fill="url(#chassis-grad)"
+        stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.3"
+        filter="url(#shadow)"/>
+
+  <!-- Friso de luz especular contínuo na curvatura superior -->
+  <path d="M 64 42 L 192 42"
+        stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/>
+
+  <!-- Barras Laterais do Espectro Sonoro / Visualizador de Áudio (Esquerda) -->
+  <g fill="url(#wave-grad)">
+    <rect x="58" y="104" width="6" height="20" rx="3" opacity="0.4"/>
+    <rect x="70" y="94" width="6" height="40" rx="3" opacity="0.6"/>
+    <rect x="82" y="80" width="6" height="68" rx="3" opacity="0.85"/>
+    <rect x="94" y="98" width="6" height="32" rx="3" opacity="0.5"/>
+
+    <!-- Barras Laterais do Espectro Sonoro (Direita) -->
+    <rect x="156" y="98" width="6" height="32" rx="3" opacity="0.5"/>
+    <rect x="168" y="80" width="6" height="68" rx="3" opacity="0.85"/>
+    <rect x="180" y="94" width="6" height="40" rx="3" opacity="0.6"/>
+    <rect x="192" y="104" width="6" height="20" rx="3" opacity="0.4"/>
+  </g>
+
+  <!-- Base Redonda do Suporte do Microfone -->
+  <ellipse cx="128" cy="186" rx="34" ry="9" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+  <ellipse cx="128" cy="186" rx="24" ry="5" fill="#334155" opacity="0.6"/>
+
+  <!-- Haste Vertical do Suporte -->
+  <rect x="125" y="146" width="6" height="40" rx="2" fill="#64748b"/>
+
+  <!-- Braçadeira em U de Suspensão Elástica (Shock Mount) -->
+  <path d="M 102 110 C 102 144 154 144 154 110"
+        fill="none" stroke="#94a3b8" stroke-width="4.5" stroke-linecap="round"/>
+
+  <!-- Pivôs Laterais de Fixação -->
+  <circle cx="102" cy="110" r="4" fill="#cbd5e1" stroke="#475569" stroke-width="1"/>
+  <circle cx="154" cy="110" r="4" fill="#cbd5e1" stroke="#475569" stroke-width="1"/>
+
+  <!-- Cápsula Principal do Microfone -->
+  <rect x="110" y="66" width="36" height="68" rx="18"
+        fill="url(#mic-body)" stroke="#475569" stroke-width="1.5"/>
+
+  <!-- Grelha de Malha do Microfone (Mesh) com Brilho Cósmico -->
+  <path d="M 110 84 C 110 74 118 66 128 66 C 138 66 146 74 146 84 V 98 H 110 Z"
+        fill="#0b1120" opacity="0.55"/>
+
+  <!-- Linhas da Grelha do Microfone -->
+  <line x1="112" y1="76" x2="144" y2="76" stroke="#38bdf8" stroke-width="1" opacity="0.6"/>
+  <line x1="110" y1="84" x2="146" y2="84" stroke="#38bdf8" stroke-width="1" opacity="0.6"/>
+  <line x1="110" y1="92" x2="146" y2="92" stroke="#38bdf8" stroke-width="1" opacity="0.6"/>
+  <line x1="120" y1="68" x2="120" y2="98" stroke="#38bdf8" stroke-width="1" opacity="0.4"/>
+  <line x1="128" y1="66" x2="128" y2="98" stroke="#38bdf8" stroke-width="1" opacity="0.6"/>
+  <line x1="136" y1="68" x2="136" y2="98" stroke="#38bdf8" stroke-width="1" opacity="0.4"/>
+
+  <!-- Faixa de Divisão Central Metálica -->
+  <rect x="109" y="99" width="38" height="4" rx="1" fill="#cbd5e1"/>
+
+  <!-- LED Indicador de Gravação Ativa (Rec) com Glow Pulsante -->
+  <circle cx="128" cy="118" r="5" fill="url(#rec-grad)" filter="url(#rec-glow)"/>
+  <circle cx="128" cy="118" r="2.2" fill="#ffffff" opacity="0.85"/>
+</svg>

@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <!-- Chassi em titânio escuro espacial -->
+    <linearGradient id="chassis-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Corpo do Baú/Cápsula de Compressão -->
+    <linearGradient id="vault-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="50%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Cursor do Zíper em Âmbar Solar Radiante -->
+    <linearGradient id="slider-amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="50%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+
+    <!-- Puxador em Ciano Cósmico -->
+    <linearGradient id="pull-cyan" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+
+    <!-- Cinta de Fixação / Reforço -->
+    <linearGradient id="strap-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="50%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="7" stdDeviation="8" flood-opacity="0.3"/>
+    </filter>
+
+    <filter id="slider-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#fbbf24" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Chassi Base Squircle (rx 28) -->
+  <rect x="36" y="36" width="184" height="184" rx="28" ry="28"
+        fill="url(#chassis-grad)"
+        stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.3"
+        filter="url(#shadow)"/>
+
+  <!-- Friso de luz especular superior -->
+  <path d="M 64 42 L 192 42"
+        stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/>
+
+  <!-- Cápsula / Baú de Compressão de Dados -->
+  <rect x="56" y="60" width="144" height="136" rx="16"
+        fill="url(#vault-grad)" stroke="#475569" stroke-width="1.5"/>
+
+  <!-- Cintas de Pressurização Metálicas (Superior e Inferior) -->
+  <rect x="56" y="84" width="144" height="12" fill="url(#strap-grad)"/>
+  <rect x="56" y="160" width="144" height="12" fill="url(#strap-grad)"/>
+
+  <!-- Rebites de Reforço das Cintas -->
+  <g fill="#94a3b8">
+    <circle cx="68" cy="90" r="2.5"/>
+    <circle cx="86" cy="90" r="2.5"/>
+    <circle cx="170" cy="90" r="2.5"/>
+    <circle cx="188" cy="90" r="2.5"/>
+
+    <circle cx="68" cy="166" r="2.5"/>
+    <circle cx="86" cy="166" r="2.5"/>
+    <circle cx="170" cy="166" r="2.5"/>
+    <circle cx="188" cy="166" r="2.5"/>
+  </g>
+
+  <!-- Cantoneiras de Reforço em Ciano Cósmico -->
+  <path d="M 58 74 V 62 H 74" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <path d="M 198 74 V 62 H 182" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <path d="M 58 182 V 194 H 74" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <path d="M 198 182 V 194 H 182" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Canal Trilha do Zíper Central -->
+  <rect x="122" y="60" width="12" height="136" fill="#090d16"/>
+
+  <!-- Dentes Intertravados do Zíper -->
+  <g fill="#94a3b8">
+    <!-- Dentes da esquerda -->
+    <rect x="122" y="66" width="5" height="4" rx="1"/>
+    <rect x="122" y="74" width="5" height="4" rx="1"/>
+    <rect x="122" y="82" width="5" height="4" rx="1"/>
+    <rect x="122" y="90" width="5" height="4" rx="1"/>
+    <rect x="122" y="98" width="5" height="4" rx="1"/>
+    <rect x="122" y="106" width="5" height="4" rx="1"/>
+    <rect x="122" y="136" width="5" height="4" rx="1"/>
+    <rect x="122" y="144" width="5" height="4" rx="1"/>
+    <rect x="122" y="152" width="5" height="4" rx="1"/>
+    <rect x="122" y="160" width="5" height="4" rx="1"/>
+    <rect x="122" y="168" width="5" height="4" rx="1"/>
+    <rect x="122" y="176" width="5" height="4" rx="1"/>
+    <rect x="122" y="184" width="5" height="4" rx="1"/>
+
+    <!-- Dentes da direita -->
+    <rect x="129" y="70" width="5" height="4" rx="1"/>
+    <rect x="129" y="78" width="5" height="4" rx="1"/>
+    <rect x="129" y="86" width="5" height="4" rx="1"/>
+    <rect x="129" y="94" width="5" height="4" rx="1"/>
+    <rect x="129" y="102" width="5" height="4" rx="1"/>
+    <rect x="129" y="132" width="5" height="4" rx="1"/>
+    <rect x="129" y="140" width="5" height="4" rx="1"/>
+    <rect x="129" y="148" width="5" height="4" rx="1"/>
+    <rect x="129" y="156" width="5" height="4" rx="1"/>
+    <rect x="129" y="164" width="5" height="4" rx="1"/>
+    <rect x="129" y="172" width="5" height="4" rx="1"/>
+    <rect x="129" y="180" width="5" height="4" rx="1"/>
+    <rect x="129" y="188" width="5" height="4" rx="1"/>
+  </g>
+
+  <!-- Cursor Deslizante e Puxador do Zíper Cósmico -->
+  <g filter="url(#slider-glow)">
+    <!-- Cursor Principal -->
+    <path d="M 117 110 H 139 C 141.2 110 143 111.8 143 114 V 126 C 143 129 140 131 137 131 H 119 C 116 131 113 129 113 126 V 114 C 113 111.8 114.8 110 117 110 Z"
+          fill="url(#slider-amber)" stroke="#ffffff" stroke-width="0.8" stroke-opacity="0.6"/>
+
+    <!-- Puxador Pendente (Pull-Tab) -->
+    <rect x="123" y="128" width="10" height="28" rx="4"
+          fill="url(#pull-cyan)" stroke="#ffffff" stroke-width="0.8" stroke-opacity="0.5"/>
+
+    <!-- Fenda / Recorte do Puxador -->
+    <rect x="125.5" y="142" width="5" height="8" rx="2" fill="#090d16"/>
+  </g>
+</svg>
