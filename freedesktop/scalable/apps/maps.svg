@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <!-- Chassi em titânio escuro espacial -->
+    <linearGradient id="chassis-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Terreno de navegação escuro -->
+    <linearGradient id="map-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b2545"/>
+      <stop offset="100%" stop-color="#061224"/>
+    </linearGradient>
+
+    <!-- Pino de Localização em Âmbar Solar -->
+    <linearGradient id="pin-amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+
+    <clipPath id="map-clip">
+      <rect x="50" y="50" width="156" height="156" rx="18" ry="18"/>
+    </clipPath>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="7" stdDeviation="8" flood-opacity="0.3"/>
+    </filter>
+
+    <filter id="pin-shadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#020617" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Chassi Base Squircle (rx 28) -->
+  <rect x="36" y="36" width="184" height="184" rx="28" ry="28"
+        fill="url(#chassis-grad)"
+        stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.3"
+        filter="url(#shadow)"/>
+
+  <!-- Friso de luz especular contínuo na curvatura superior -->
+  <path d="M 64 42 L 192 42"
+        stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.35"/>
+
+  <!-- Visor Cartográfico Recortado -->
+  <g clip-path="url(#map-clip)">
+    <rect x="50" y="50" width="156" height="156" fill="url(#map-bg)"/>
+
+    <!-- Quadras / Setores Urbanos e Rio Ciano -->
+    <path d="M 46 168 Q 108 148 142 110 T 210 68"
+          fill="none" stroke="#0284c7" stroke-width="22" stroke-linecap="round" opacity="0.65"/>
+
+    <!-- Malha Viária Secundária -->
+    <g stroke="#334155" stroke-width="6">
+      <line x1="50" y1="92" x2="206" y2="148"/>
+      <line x1="94" y1="50" x2="68" y2="206"/>
+      <line x1="168" y1="50" x2="144" y2="206"/>
+    </g>
+
+    <!-- Rota de Navegação Ativa em Ciano Elétrico -->
+    <path d="M 58 188 L 114 148 L 138 118 L 196 92"
+          fill="none" stroke="#38bdf8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Moldura interna do visor -->
+  <rect x="50" y="50" width="156" height="156" rx="18" ry="18"
+        fill="none" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.32"/>
+
+  <!-- Pino GPS Central em Âmbar Solar -->
+  <g filter="url(#pin-shadow)">
+    <path d="M 128 66 C 107 66 90 83 90 104 C 90 131 128 168 128 168 C 128 168 166 131 166 104 C 166 83 149 66 128 66 Z"
+          fill="url(#pin-amber)"/>
+    <circle cx="128" cy="104" r="15" fill="#ffffff"/>
+    <circle cx="128" cy="104" r="6" fill="#0f172a"/>
+  </g>
+</svg>

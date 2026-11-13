@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <!-- Capa da Agenda de Contatos (Azul Cósmico a Azul Profundo) -->
+    <linearGradient id="book-cover" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#075985"/>
+    </linearGradient>
+
+    <!-- Lombada lateral em Titânio Escuro -->
+    <linearGradient id="book-spine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Avatar / Silhueta de Usuário -->
+    <linearGradient id="avatar-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#bae6fd"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="7" stdDeviation="8" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <!-- Abas Laterais de Índice (Ciano, Âmbar Solar e Púrpura Cósmico) -->
+  <rect x="196" y="56" width="22" height="36" rx="8" fill="#38bdf8"/>
+  <rect x="196" y="104" width="22" height="36" rx="8" fill="#fbbf24"/>
+  <rect x="196" y="152" width="22" height="36" rx="8" fill="#c084fc"/>
+
+  <!-- Capa Principal Squircle (rx 28) -->
+  <rect x="40" y="32" width="168" height="192" rx="28" ry="28"
+        fill="url(#book-cover)"
+        filter="url(#shadow)"/>
+
+  <!-- Lombada Esquerda -->
+  <path d="M 68 32 H 80 V 224 H 68 C 52.5 224 40 211.5 40 196 V 60 C 40 44.5 52.5 32 68 32 Z"
+        fill="url(#book-spine)"/>
+
+  <!-- Friso de luz especular contínuo na curvatura superior -->
+  <path d="M 84 38 L 182 38"
+        stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/>
+
+  <!-- Círculo de Moldura do Avatar -->
+  <circle cx="136" cy="128" r="46" fill="#082f49" opacity="0.45"/>
+
+  <!-- Silhueta do Contato (Cabeça + Ombros) -->
+  <circle cx="136" cy="112" r="16" fill="url(#avatar-grad)"/>
+  <path d="M 108 156 C 108 140 120 134 136 134 C 152 134 164 140 164 156 C 164 160 160 164 154 164 H 118 C 112 164 108 160 108 156 Z"
+        fill="url(#avatar-grad)"/>
+</svg>
