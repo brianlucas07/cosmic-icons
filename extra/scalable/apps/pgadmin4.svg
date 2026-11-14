@@ -13,27 +13,6 @@
       <stop offset="100%" stop-color="#11253a"/>
     </linearGradient>
 
-    <!-- Gradiente do Corpo do Slonik (Cerâmica Platina com Profundidade) -->
-    <linearGradient id="slonik-body" x1="20%" y1="0%" x2="80%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="65%" stop-color="#e6f0fa"/>
-      <stop offset="100%" stop-color="#c3d8eb"/>
-    </linearGradient>
-
-    <!-- Sombreamento da Orelha Esquerda -->
-    <linearGradient id="slonik-ear-shade" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#9ebcd6" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#6d93b5" stop-opacity="0.8"/>
-    </linearGradient>
-
-    <!-- Sensor Óptico Ciano do Olho -->
-    <radialGradient id="slonik-eye" cx="35%" cy="35%" r="65%">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="40%" stop-color="#38d9ff"/>
-      <stop offset="80%" stop-color="#0096d6"/>
-      <stop offset="100%" stop-color="#004e75"/>
-    </radialGradient>
-
     <!-- Linhas Tecnológicas de Banco de Dados / Grid Blueprint -->
     <linearGradient id="pg-grid" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#64d8ff" stop-opacity="0.35"/>
@@ -46,9 +25,9 @@
       <feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="#336791" flood-opacity="0.35"/>
     </filter>
 
-    <!-- Sombra e Relevo do Mascote Interno -->
-    <filter id="slonik-depth" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#081726" flood-opacity="0.4"/>
+    <!-- Sombra Suave e Destaque do Mascote Branco -->
+    <filter id="slonik-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#05121f" flood-opacity="0.45"/>
     </filter>
   </defs>
 
@@ -65,45 +44,41 @@
       <circle cx="188" cy="75" r="3.5" fill="#64d8ff" opacity="0.4"/>
       <circle cx="128" cy="200" r="3.5" fill="#64d8ff" opacity="0.4"/>
 
-      <!-- Mascote Slonik Perfeitamente Enquadrado no Interior do Card -->
-      <g transform="translate(47, 49) scale(1.22)" filter="url(#slonik-depth)">
-        <!-- 1. Corpo / Cabeça Principal -->
+      <!-- Mascote Slonik em Branco Puro (#ffffff) com Relevo Óptico -->
+      <g transform="translate(47, 49) scale(1.22)" filter="url(#slonik-glow)">
+        <!-- 1. Corpo e Cabeça Principal em Branco Puro -->
         <path d="M 117.17 79.2 c -13.71 2.83 -14.65 -1.81 -14.65 -1.81 C 117 55.91 123 28.64 117.82 22 C 103.57 3.76 78.91 12.37 78.5 12.6 l -0.13 0 a 48.65 48.65 0 0 0 -9.15 -0.95 C 63 11.57 58.31 13.29 54.74 16 c 0 0 -44 -18.12 -41.95 22.8 c 0.44 8.7 12.48 65.86 26.84 48.6 C 44.88 81.08 50 75.75 50 75.75 A 13.39 13.39 0 0 0 58.65 78 l 0.25 -0.21 A 9.41 9.41 0 0 0 59 80.22 c -3.7 4.13 -2.61 4.86 -10 6.38 s -3.08 4.29 -0.21 5 c 3.48 0.87 11.53 2.1 17 -5.52 l -0.22 0.87 c 1.45 1.16 2.47 7.56 2.3 13.35 s -0.28 9.77 0.86 12.88 s 2.28 10.1 12 8 C 88.81 119.46 93 115 93.6 107.42 C 94 102.07 95 102.87 95 98.08 l 0.75 -2.26 c 0.87 -7.26 0.14 -9.6 5.15 -8.51 l 1.21 0.11 a 27.6 27.6 0 0 0 11.34 -1.91 c 6.09 -2.83 9.71 -7.55 3.7 -6.31 Z"
-              fill="url(#slonik-body)"/>
+              fill="#ffffff"/>
 
-        <!-- 2. Profundidade da Orelha Esquerda -->
-        <path d="M 54.74 16 C 54.74 16 10.74 -2.12 12.79 38.8 C 13.23 47.5 25.27 104.66 39.63 87.4 C 44.88 81.08 50 75.75 50 75.75 Z"
-              fill="url(#slonik-ear-shade)"/>
-
-        <!-- 3. Contornos Anatômicos Sutis com Linhas Azul-Petróleo de Precisão -->
+        <!-- 2. Linhas Anatômicas Internas de Recorte Nítido em Azul PostgreSQL -->
         <path d="M 54.67 15.7 s -44 -18 -42 22.93 c 0.44 8.7 12.48 65.87 26.84 48.6 c 5.25 -6.32 10 -11.27 10 -11.27"
-              fill="none" stroke="#26537a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+              fill="none" stroke="#26537a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
 
         <path d="M 78.45 12.42 c -1.52 0.47 24.49 -9.51 39.28 9.38 c 5.22 6.67 -0.83 33.94 -15.31 55.42"
-              fill="none" stroke="#26537a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+              fill="none" stroke="#26537a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
 
         <path d="M 66.33 83.36 c -0.38 13.5 0.09 27.09 1.41 30.39 s 4.15 9.73 13.88 7.64 c 8.12 -1.74 11.08 -5.11 12.36 -12.55 c 0.94 -5.47 2.77 -20.67 3 -23.79"
-              fill="none" stroke="#26537a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+              fill="none" stroke="#26537a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
 
         <path d="M 102.42 77.22 s 0.94 4.64 14.65 1.81 c 6 -1.24 2.4 3.48 -3.7 6.31 c -5 2.32 -16.21 2.92 -16.39 -0.29 c -0.47 -8.27 5.9 -5.76 5.44 -7.83 c -0.42 -1.87 -3.26 -3.7 -5.15 -8.27 c -1.64 -4 -22.57 -34.58 5.8 -30 c 1 -0.22 -7.4 -27 -33.95 -27.42 S 43.45 44.14 43.45 44.14"
-              fill="none" stroke="#26537a" stroke-width="1.0" stroke-linecap="round" opacity="0.4"/>
+              fill="none" stroke="#26537a" stroke-width="1.4" stroke-linecap="round"/>
 
         <path d="M 58.66 80 c -0.38 -2.44 0.79 -5.33 2.05 -8.71 C 62.6 66.19 67 61.11 63.47 45 c -2.6 -12 -20 -2.5 -20 -0.87 a 81.48 81.48 0 0 1 -0.29 16 c -1.41 10.06 6.4 18.57 15.39 17.7"
-              fill="none" stroke="#26537a" stroke-width="1.0" stroke-linecap="round" opacity="0.4"/>
+              fill="none" stroke="#26537a" stroke-width="1.4" stroke-linecap="round"/>
 
         <path d="M 103.07 38.92 c 0.24 4.36 -0.94 7.33 -1.08 12 c -0.22 6.74 3.21 14.46 -2 22.19"
-              fill="none" stroke="#26537a" stroke-width="1.0" stroke-linecap="round" opacity="0.45"/>
+              fill="none" stroke="#26537a" stroke-width="1.4" stroke-linecap="round"/>
 
-        <!-- 4. Presa de Marfim -->
+        <!-- 3. Presa com Contorno Nítido -->
         <path d="M 58.9 80.05 c -3.7 4.13 -2.61 4.86 -10 6.38 s -3.09 4.29 -0.22 5 c 3.48 0.87 11.53 2.1 17 -5.52 c 1.66 -2.32 0 -6 -2.28 -7 c -1.1 -0.46 -2.57 -1 -4.46 1.09 Z"
-              fill="#ffffff" stroke="#26537a" stroke-width="1.0"/>
+              fill="#ffffff" stroke="#26537a" stroke-width="1.4"/>
 
-        <!-- 5. Olhos Sensores Ciano Holográficos -->
+        <!-- 4. Olhos em Azul Recortado -->
         <path d="M 54.51 43.9 c -0.08 0.55 1 2 2.45 2.23 a 2.62 2.62 0 0 0 2.72 -1.51 c 0.08 -0.56 -1 -1.17 -2.44 -1.37 s -2.65 0.09 -2.73 0.65 Z"
-              fill="url(#slonik-eye)"/>
+              fill="#26537a"/>
 
         <path d="M 98 42.76 c 0.07 0.56 -1 2 -2.45 2.24 a 2.64 2.64 0 0 1 -2.73 -1.52 c -0.07 -0.55 1 -1.16 2.45 -1.36 s 2.65 0.09 2.73 0.64 Z"
-              fill="url(#slonik-eye)"/>
+              fill="#26537a"/>
       </g>
     </g>
 
