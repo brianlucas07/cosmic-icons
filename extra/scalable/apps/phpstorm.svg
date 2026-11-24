@@ -21,4 +21,20 @@
       <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#b74af7" flood-opacity="0.32"/>
     </filter>
   </defs>
+  <g filter="url(#ps-shadow)">
+    <g clip-path="url(#squircle-clip)">
+      <rect x="28" y="28" width="200" height="200" fill="url(#ps-facet-deep)"/>
+      <polygon points="28,28 148,28 28,156" fill="#087cfa"/>
+      <polygon points="116,28 228,28 228,168 56,228 28,228 28,168" fill="url(#ps-facet-main)"/>
+      <line x1="28" y1="156" x2="148" y2="28" stroke="#ffffff" stroke-width="0.75" stroke-opacity="0.25"/>
+    </g>
+    <rect x="28" y="28" width="200" height="200" rx="44" ry="44" fill="none" stroke="#ffffff" stroke-width="1.2" stroke-opacity="0.25"/>
+    <path d="M 64 36 L 192 36" stroke="#ffffff" stroke-width="2.8" stroke-linecap="round" opacity="0.45"/>
+    <rect x="68" y="68" width="120" height="120" rx="18" fill="url(#center-tile)" stroke="#b74af7" stroke-width="1.2" stroke-opacity="0.4"/>
+    <g transform="translate(32, 32) scale(3)">
+      <path d="M17 17H24.2C27.9 17 30.2 19 30.2 22.2C30.2 25.4 27.9 27.4 24.2 27.4H20.3V32H17V17ZM20.3 20V24.5H23.8C25.7 24.5 26.8 23.6 26.8 22.2C26.8 20.8 25.7 20 23.8 20H20.3Z" fill="#ffffff"/>
+      <path d="M38.2 32.3C34.9 32.3 32.5 30.7 32.2 27.9H35.5C35.7 29.1 36.7 29.8 38.3 29.8C39.9 29.8 40.9 29.1 40.9 28C40.9 26.9 40 26.4 37.8 25.9C34.7 25.2 32.7 24 32.7 21.3C32.7 18.5 35 16.7 38.2 16.7C41.4 16.7 43.7 18.4 43.9 21.1H40.6C40.4 20 39.5 19.2 38.1 19.2C36.8 19.2 35.9 19.9 35.9 20.9C35.9 21.9 36.7 22.4 38.9 22.9C42.1 23.6 44.2 24.8 44.2 27.6C44.2 30.6 41.8 32.3 38.2 32.3Z" fill="#ffffff"/>
+      <path d="M33 44H17V47H33V44Z" fill="#ffffff"/>
+    </g>
+  </g>
 </svg>
