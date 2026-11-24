@@ -50,6 +50,7 @@ link_jetbrains_toolbox_icons() {
             *webstorm*)  target="webstorm.svg" ;;
             *rider*)     target="rider.svg" ;;
             *rustrover*) target="rustrover.svg" ;;
+            *phpstorm*)  target="phpstorm.svg" ;;
         esac
         if [ -n "$target" ] && [ "$icon_name.svg" != "$target" ]; then
             ln -sf "$target" "$apps_dir/$icon_name.svg" 2>/dev/null || true
